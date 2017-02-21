@@ -1,0 +1,1808 @@
+﻿Log file open, 02/09/17 06:39:58
+LogInit:Display: Running engine for game: ballPhys
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-1581472466) SRandInit(-1581472465).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.077405
+LogInit: Version: 4.12.5-3039270+++UE4+Release-4.12
+LogInit: API Version: 2992821
+LogInit: Net Version: 3039270
+LogDevObjectVersion: Number of dev versions registered: 13
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 3
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 1
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 2
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 6
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 2
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 0
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogInit: Compiled (64-bit): Jul  6 2016 09:09:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.12
+LogInit: Command line:  /Temp/Autosaves/Game/ThirdPersonBP/Maps/UEDPCThirdPersonExampleMap -game -PIEVIACONSOLE -ResX=1366 -ResY=768  -Multiprocess -windowed -messaging -SessionName="Play in Standalone Game" 
+LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.02.09-11.39.58:948][  0]LogInit: Selected Device Profile: [Windows]
+[2017.02.09-11.39.58:948][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.02.09-11.39.58:977][  0]LogInit: Computer: BMO
+[2017.02.09-11.39.58:977][  0]LogInit: User: Steve
+[2017.02.09-11.39.58:977][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.02.09-11.39.58:977][  0]LogInit: High frequency timer resolution =3.410078 MHz
+[2017.02.09-11.39.58:977][  0]LogMemory: Memory total: Physical=8.0GB (8GB approx)
+[2017.02.09-11.39.58:977][  0]LogMemory: Platform Memory Stats for Windows
+[2017.02.09-11.39.58:977][  0]LogMemory: Process Physical Memory: 189.98 MB used, 189.98 MB peak
+[2017.02.09-11.39.58:977][  0]LogMemory: Process Virtual Memory: 195.25 MB used, 195.25 MB peak
+[2017.02.09-11.39.58:977][  0]LogMemory: Physical Memory: 5632.47 MB used, 8145.96 MB total
+[2017.02.09-11.39.58:977][  0]LogMemory: Virtual Memory: 553.59 MB used, 134217728.00 MB total
+[2017.02.09-11.39.59:013][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2017.02.09-11.39.59:586][  0]LogD3D11RHI: D3D11 adapters:
+[2017.02.09-11.40.00:102][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 660' (Feature Level 11_0)
+[2017.02.09-11.40.00:102][  0]LogD3D11RHI:       2016/0/4072 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2017.02.09-11.40.00:103][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.02.09-11.40.00:103][  0]LogD3D11RHI:       0/0/4072 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.02.09-11.40.00:103][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.02.09-11.40.00:123][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.02.09-11.40.00:123][  0]LogD3D11RHI:     GPU DeviceId: 0x11c0 (for the marketing name, search the web for "GPU Device Id")
+[2017.02.09-11.40.00:123][  0]LogWindows: EnumDisplayDevices:
+[2017.02.09-11.40.00:123][  0]LogWindows:    0. 'NVIDIA GeForce GTX 660' (P:1 D:1)
+[2017.02.09-11.40.00:123][  0]LogWindows:    1. 'NVIDIA GeForce GTX 660' (P:0 D:1)
+[2017.02.09-11.40.00:124][  0]LogWindows:    2. 'NVIDIA GeForce GTX 660' (P:0 D:0)
+[2017.02.09-11.40.00:124][  0]LogWindows:    3. 'NVIDIA GeForce GTX 660' (P:0 D:0)
+[2017.02.09-11.40.00:124][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2017.02.09-11.40.00:124][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 660
+[2017.02.09-11.40.00:124][  0]LogD3D11RHI:   Driver Version: 378.49 (internal:21.21.13.7849, unified:378.49)
+[2017.02.09-11.40.00:124][  0]LogD3D11RHI:      Driver Date: 1-20-2017
+[2017.02.09-11.40.00:124][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.02.09-11.40.00:604][  0]LogD3D11RHI: Async texture creation enabled
+[2017.02.09-11.40.00:889][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.02.09-11.40.00:889][  0]LogShaderCompilers: Guid format shader working directory is -17 characters bigger than the processId version (../../../../../../Users/Steve/Desktop/Soul Striker V0.3.2 New/Intermediate/Shaders/WorkingDirectory/126100/).
+[2017.02.09-11.40.00:890][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Steve/AppData/Local/Temp/UnrealShaderWorkingDir/D0781FDD46C94B753EF7AFAB7FC0DED2/'.
+[2017.02.09-11.40.00:890][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.02.09-11.40.03:986][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.02.09-11.40.03:994][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.02.09-11.40.04:002][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.02.09-11.40.04:009][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.02.09-11.40.04:009][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.02.09-11.40.04:077][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.02.09-11.40.04:571][  0]LogDerivedDataCache: Loaded boot cache 0.49s 48MB C:/Users/Steve/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2017.02.09-11.40.04:572][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Steve/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2017.02.09-11.40.04:573][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Steve/Desktop/Soul Striker V0.3.2 New/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.02.09-11.40.04:573][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.02.09-11.40.04:573][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Steve/Desktop/Soul Striker V0.3.2 New/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.02.09-11.40.04:573][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.02.09-11.40.04:601][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.02.09-11.40.04:613][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Steve/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.02.09-11.40.04:772][  0]LogAssetRegistry: FAssetRegistry took 0.0001 seconds to start up
+[2017.02.09-11.40.04:777][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.004670 seconds
+[2017.02.09-11.40.04:780][  0]LogInit: Selected Device Profile: [Windows]
+[2017.02.09-11.40.04:781][  0]LogContentStreaming: Texture pool size is 1000.00 MB
+[2017.02.09-11.40.04:909][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2017.02.09-11.40.04:909][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.02.09-11.40.04:909][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2017.02.09-11.40.05:198][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.02.09-11.40.05:404][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.02.09-11.40.05:404][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.02.09-11.40.06:398][  0]LogMoviePlayer: Initializing movie player
+[2017.02.09-11.40.06:477][  0]LogWindowsMoviePlayer: Unable to load movie: ../../../../../../Users/Steve/Desktop/Soul Striker V0.3.2 New/Content/Movies/Default_Startup.mp4
+[2017.02.09-11.40.06:547][  0]LogSubstanceCoreModule: Substance CPU Engine Loaded, Max Texture Size 2048
+[2017.02.09-11.40.06:581][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.02.09-11.40.06:659][  0]SourceControl: Info Source control is disabled
+[2017.02.09-11.40.06:659][  0]SourceControl: Info Source control is disabled
+[2017.02.09-11.40.06:675][  0]SourceControl: Info Source control is disabled
+[2017.02.09-11.40.06:784][  0]LogUObjectArray: 31128 objects as part of root set at end of initial load.
+[2017.02.09-11.40.06:784][  0]LogUObjectAllocator: 6742592 out of 0 bytes used by permanent object pool.
+[2017.02.09-11.40.06:784][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.02.09-11.40.07:156][  0]LogEngine: Initializing Engine...
+[2017.02.09-11.40.07:157][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2017.02.09-11.40.07:158][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2017.02.09-11.40.07:280][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.02.09-11.40.07:292][  0]LogInit: FAudioDevice initialized.
+[2017.02.09-11.40.07:297][  0]LogInit: Texture streaming: Enabled
+[2017.02.09-11.40.07:360][  0]LogNet: Browse: /Temp/Autosaves/Game/ThirdPersonBP/Maps/UEDPCThirdPersonExampleMap?Name=Player
+[2017.02.09-11.40.07:360][  0]LogLoad: LoadMap: /Temp/Autosaves/Game/ThirdPersonBP/Maps/UEDPCThirdPersonExampleMap?Name=Player
+[2017.02.09-11.40.07:377][  0]LogMemory: Platform Memory Stats for Windows
+[2017.02.09-11.40.07:377][  0]LogMemory: Process Physical Memory: 569.05 MB used, 586.84 MB peak
+[2017.02.09-11.40.07:377][  0]LogMemory: Process Virtual Memory: 622.32 MB used, 629.71 MB peak
+[2017.02.09-11.40.07:377][  0]LogMemory: Physical Memory: 5890.60 MB used, 8145.96 MB total
+[2017.02.09-11.40.07:377][  0]LogMemory: Virtual Memory: 1233.58 MB used, 134217728.00 MB total
+[2017.02.09-11.40.07:377][  0]LogMemory: 
+[2017.02.09-11.40.07:377][  0]Allocator Stats for TBB: (not implemented)
+[2017.02.09-11.40.08:190][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.02.09-11.40.08:223][  0]LogWorld: Game class is 'ThirdPersonGameMode_C'
+[2017.02.09-11.40.08:284][  0]LogWorld: Bringing World /Temp/Autosaves/Game/ThirdPersonBP/Maps/UEDPCThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2017.02.09-06.40.08
+[2017.02.09-11.40.08:287][  0]LogWorld: Bringing up level for play took: 0.062733
+[2017.02.09-11.40.08:290][  0]LogLoad: Took 0.929398 seconds to LoadMap(/Temp/Autosaves/Game/ThirdPersonBP/Maps/UEDPCThirdPersonExampleMap)
+[2017.02.09-11.40.08:290][  0]LogInit:Display: Game Engine Initialized.
+[2017.02.09-11.40.08:590][  0]LogLoad: Full Startup: 11.20 seconds (BP compile: 0.32 seconds)
+[2017.02.09-11.40.08:590][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.02.09-11.40.08:590][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.02.09-11.40.08:608][  0]LogOcInput: OculusInput pre-init called
+[2017.02.09-11.40.08:702][  0]LogRenderer: Reallocating scene render targets to support 128x128 (Frame:1).
+[2017.02.09-11.40.08:878][  1]LogRenderer: Reallocating scene render targets to support 1368x768 (Frame:2).
+[2017.02.09-11.40.08:881][  1]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.08:881][  1]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.08:912][  3]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.09:009][  9]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.09:121][ 16]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.09:218][ 22]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.09:315][ 28]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.09:411][ 34]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.09:509][ 40]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.09:621][ 47]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.09:718][ 53]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.09:815][ 59]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.09:912][ 65]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.10:009][ 71]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.10:122][ 78]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.10:218][ 84]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.10:315][ 90]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.10:411][ 96]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.10:508][102]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.10:622][109]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.10:718][115]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.10:815][121]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.10:912][127]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.11:009][133]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.11:121][140]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.11:218][146]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.11:315][152]LogBlueprintUserMessages: [spiritOrbOG_188] 565.371826
+[2017.02.09-11.40.11:412][158]LogBlueprintUserMessages: [spiritOrbOG_188] 550.371826
+[2017.02.09-11.40.11:509][164]LogBlueprintUserMessages: [spiritOrbOG_188] 535.371826
+[2017.02.09-11.40.11:621][171]LogBlueprintUserMessages: [spiritOrbOG_188] 520.371826
+[2017.02.09-11.40.11:718][177]LogBlueprintUserMessages: [spiritOrbOG_188] 505.371826
+[2017.02.09-11.40.11:815][183]LogBlueprintUserMessages: [spiritOrbOG_188] 490.371826
+[2017.02.09-11.40.11:913][189]LogBlueprintUserMessages: [spiritOrbOG_188] 475.371826
+[2017.02.09-11.40.11:977][193]LogBlueprintUserMessages: [corruptionCube3] 475.371826
+[2017.02.09-11.40.11:993][194]LogBlueprintUserMessages: [spiritOrbOG_188] -475.371826
+[2017.02.09-11.40.12:009][195]LogBlueprintUserMessages: [spiritOrbOG_188] -460.371826
+[2017.02.09-11.40.12:122][202]LogBlueprintUserMessages: [spiritOrbOG_188] -445.371826
+[2017.02.09-11.40.12:219][208]LogBlueprintUserMessages: [spiritOrbOG_188] -430.371826
+[2017.02.09-11.40.12:316][214]LogBlueprintUserMessages: [spiritOrbOG_188] -415.371826
+[2017.02.09-11.40.12:413][220]LogBlueprintUserMessages: [spiritOrbOG_188] -400.371826
+[2017.02.09-11.40.12:510][226]LogBlueprintUserMessages: [spiritOrbOG_188] -385.371826
+[2017.02.09-11.40.12:623][233]LogBlueprintUserMessages: [spiritOrbOG_188] -370.371826
+[2017.02.09-11.40.12:720][239]LogBlueprintUserMessages: [spiritOrbOG_188] -355.371826
+[2017.02.09-11.40.12:816][245]LogBlueprintUserMessages: [spiritOrbOG_188] -340.371826
+[2017.02.09-11.40.12:913][251]LogBlueprintUserMessages: [spiritOrbOG_188] -325.371826
+[2017.02.09-11.40.13:010][257]LogBlueprintUserMessages: [spiritOrbOG_188] -310.371826
+[2017.02.09-11.40.13:122][264]LogBlueprintUserMessages: [spiritOrbOG_188] 594.253906
+[2017.02.09-11.40.13:219][270]LogBlueprintUserMessages: [spiritOrbOG_188] 579.253906
+[2017.02.09-11.40.13:316][276]LogBlueprintUserMessages: [spiritOrbOG_188] 564.253906
+[2017.02.09-11.40.13:413][282]LogBlueprintUserMessages: [spiritOrbOG_188] 549.253906
+[2017.02.09-11.40.13:509][288]LogBlueprintUserMessages: [spiritOrbOG_188] 534.253906
+[2017.02.09-11.40.13:622][295]LogBlueprintUserMessages: [spiritOrbOG_188] 519.253906
+[2017.02.09-11.40.13:719][301]LogBlueprintUserMessages: [spiritOrbOG_188] 504.253906
+[2017.02.09-11.40.13:816][307]LogBlueprintUserMessages: [spiritOrbOG_188] 489.253906
+[2017.02.09-11.40.13:913][313]LogBlueprintUserMessages: [spiritOrbOG_188] 474.253906
+[2017.02.09-11.40.13:977][317]LogBlueprintUserMessages: [corruptionCube_374] 474.253906
+[2017.02.09-11.40.13:993][318]LogBlueprintUserMessages: [spiritOrbOG_188] 474.253906
+[2017.02.09-11.40.14:010][319]LogBlueprintUserMessages: [spiritOrbOG_188] 459.253906
+[2017.02.09-11.40.14:058][322]LogBlueprintUserMessages: [corruptionCube15] 459.253906
+[2017.02.09-11.40.14:074][323]LogBlueprintUserMessages: [spiritOrbOG_188] -459.253906
+[2017.02.09-11.40.14:122][326]LogBlueprintUserMessages: [spiritOrbOG_188] -444.253906
+[2017.02.09-11.40.14:219][332]LogBlueprintUserMessages: [spiritOrbOG_188] -429.253906
+[2017.02.09-11.40.14:316][338]LogBlueprintUserMessages: [spiritOrbOG_188] -414.253906
+[2017.02.09-11.40.14:413][344]LogBlueprintUserMessages: [spiritOrbOG_188] -399.253906
+[2017.02.09-11.40.14:510][350]LogBlueprintUserMessages: [spiritOrbOG_188] -384.253906
+[2017.02.09-11.40.14:622][357]LogBlueprintUserMessages: [spiritOrbOG_188] -369.253906
+[2017.02.09-11.40.14:719][363]LogBlueprintUserMessages: [spiritOrbOG_188] -354.253906
+[2017.02.09-11.40.14:816][369]LogBlueprintUserMessages: [spiritOrbOG_188] -339.253906
+[2017.02.09-11.40.14:913][375]LogBlueprintUserMessages: [spiritOrbOG_188] -324.253906
+[2017.02.09-11.40.15:010][381]LogBlueprintUserMessages: [spiritOrbOG_188] -309.253906
+[2017.02.09-11.40.15:123][388]LogBlueprintUserMessages: [spiritOrbOG_188] -294.253906
+[2017.02.09-11.40.15:219][394]LogBlueprintUserMessages: [spiritOrbOG_188] -279.253906
+[2017.02.09-11.40.15:316][400]LogBlueprintUserMessages: [spiritOrbOG_188] -264.253906
+[2017.02.09-11.40.15:413][406]LogBlueprintUserMessages: [spiritOrbOG_188] -249.253906
+[2017.02.09-11.40.15:509][412]LogBlueprintUserMessages: [spiritOrbOG_188] -234.253906
+[2017.02.09-11.40.15:623][419]LogBlueprintUserMessages: [spiritOrbOG_188] -219.253906
+[2017.02.09-11.40.15:719][425]LogBlueprintUserMessages: [spiritOrbOG_188] -204.253906
+[2017.02.09-11.40.15:816][431]LogBlueprintUserMessages: [spiritOrbOG_188] -189.253906
+[2017.02.09-11.40.15:913][437]LogBlueprintUserMessages: [spiritOrbOG_188] -174.253906
+[2017.02.09-11.40.16:009][443]LogBlueprintUserMessages: [spiritOrbOG_188] -159.253906
+[2017.02.09-11.40.16:122][450]LogBlueprintUserMessages: [spiritOrbOG_188] -144.253906
+[2017.02.09-11.40.16:219][456]LogBlueprintUserMessages: [spiritOrbOG_188] -129.253906
+[2017.02.09-11.40.16:316][462]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.16:413][468]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.16:510][474]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.16:623][481]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.16:719][487]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.16:816][493]LogBlueprintUserMessages: [spiritOrbOG_188] 676.927734
+[2017.02.09-11.40.16:913][499]LogBlueprintUserMessages: [spiritOrbOG_188] 676.927673
+[2017.02.09-11.40.17:010][505]LogBlueprintUserMessages: [spiritOrbOG_188] 661.927673
+[2017.02.09-11.40.17:123][512]LogBlueprintUserMessages: [spiritOrbOG_188] 646.927673
+[2017.02.09-11.40.17:220][518]LogBlueprintUserMessages: [spiritOrbOG_188] 631.927673
+[2017.02.09-11.40.17:316][524]LogBlueprintUserMessages: [spiritOrbOG_188] 616.927673
+[2017.02.09-11.40.17:413][530]LogBlueprintUserMessages: [spiritOrbOG_188] 601.927673
+[2017.02.09-11.40.17:510][536]LogBlueprintUserMessages: [spiritOrbOG_188] 586.927673
+[2017.02.09-11.40.17:623][543]LogBlueprintUserMessages: [spiritOrbOG_188] 571.927673
+[2017.02.09-11.40.17:719][549]LogBlueprintUserMessages: [spiritOrbOG_188] 556.927673
+[2017.02.09-11.40.17:818][555]LogBlueprintUserMessages: [spiritOrbOG_188] 541.927673
+[2017.02.09-11.40.17:834][556]LogBlueprintUserMessages: [corruptionCube11] 541.927673
+[2017.02.09-11.40.17:850][557]LogBlueprintUserMessages: [spiritOrbOG_188] -541.927673
+[2017.02.09-11.40.17:914][561]LogBlueprintUserMessages: [spiritOrbOG_188] -526.927673
+[2017.02.09-11.40.18:010][567]LogBlueprintUserMessages: [spiritOrbOG_188] -511.927673
+[2017.02.09-11.40.18:123][574]LogBlueprintUserMessages: [spiritOrbOG_188] -496.927673
+[2017.02.09-11.40.18:220][580]LogBlueprintUserMessages: [spiritOrbOG_188] -481.927673
+[2017.02.09-11.40.18:317][586]LogBlueprintUserMessages: [spiritOrbOG_188] -466.927673
+[2017.02.09-11.40.18:413][592]LogBlueprintUserMessages: [spiritOrbOG_188] -451.927673
+[2017.02.09-11.40.18:510][598]LogBlueprintUserMessages: [spiritOrbOG_188] -436.927673
+[2017.02.09-11.40.18:623][605]LogBlueprintUserMessages: [spiritOrbOG_188] -421.927673
+[2017.02.09-11.40.18:720][611]LogBlueprintUserMessages: [spiritOrbOG_188] -406.927673
+[2017.02.09-11.40.18:816][617]LogBlueprintUserMessages: [spiritOrbOG_188] -391.927673
+[2017.02.09-11.40.18:913][623]LogBlueprintUserMessages: [spiritOrbOG_188] -376.927673
+[2017.02.09-11.40.19:010][629]LogBlueprintUserMessages: [spiritOrbOG_188] -361.927673
+[2017.02.09-11.40.19:123][636]LogBlueprintUserMessages: [spiritOrbOG_188] -346.927673
+[2017.02.09-11.40.19:220][642]LogBlueprintUserMessages: [spiritOrbOG_188] -331.927673
+[2017.02.09-11.40.19:316][648]LogBlueprintUserMessages: [spiritOrbOG_188] -316.927673
+[2017.02.09-11.40.19:414][654]LogBlueprintUserMessages: [spiritOrbOG_188] -301.927673
+[2017.02.09-11.40.19:510][660]LogBlueprintUserMessages: [spiritOrbOG_188] 636.294006
+[2017.02.09-11.40.19:623][667]LogBlueprintUserMessages: [spiritOrbOG_188] 621.294006
+[2017.02.09-11.40.19:720][673]LogBlueprintUserMessages: [spiritOrbOG_188] 606.294006
+[2017.02.09-11.40.19:817][679]LogBlueprintUserMessages: [spiritOrbOG_188] 591.294006
+[2017.02.09-11.40.19:914][685]LogBlueprintUserMessages: [spiritOrbOG_188] 576.294006
+[2017.02.09-11.40.20:010][691]LogBlueprintUserMessages: [spiritOrbOG_188] 561.294006
+[2017.02.09-11.40.20:123][698]LogBlueprintUserMessages: [spiritOrbOG_188] 546.294006
+[2017.02.09-11.40.20:220][704]LogBlueprintUserMessages: [spiritOrbOG_188] 531.294006
+[2017.02.09-11.40.20:317][710]LogBlueprintUserMessages: [spiritOrbOG_188] 516.294006
+[2017.02.09-11.40.20:413][716]LogBlueprintUserMessages: [spiritOrbOG_188] 501.294006
+[2017.02.09-11.40.20:511][722]LogBlueprintUserMessages: [spiritOrbOG_188] 486.294006
+[2017.02.09-11.40.20:624][729]LogBlueprintUserMessages: [spiritOrbOG_188] 471.294006
+[2017.02.09-11.40.20:688][733]LogBlueprintUserMessages: [corruptionCube12] 471.294006
+[2017.02.09-11.40.20:704][734]LogBlueprintUserMessages: [spiritOrbOG_188] -471.294006
+[2017.02.09-11.40.20:720][735]LogBlueprintUserMessages: [spiritOrbOG_188] -456.294006
+[2017.02.09-11.40.20:817][741]LogBlueprintUserMessages: [spiritOrbOG_188] -441.294006
+[2017.02.09-11.40.20:913][747]LogBlueprintUserMessages: [spiritOrbOG_188] -426.294006
+[2017.02.09-11.40.21:010][753]LogBlueprintUserMessages: [spiritOrbOG_188] -411.294006
+[2017.02.09-11.40.21:123][760]LogBlueprintUserMessages: [spiritOrbOG_188] -396.294006
+[2017.02.09-11.40.21:220][766]LogBlueprintUserMessages: [spiritOrbOG_188] -381.294006
+[2017.02.09-11.40.21:317][772]LogBlueprintUserMessages: [spiritOrbOG_188] -366.294006
+[2017.02.09-11.40.21:414][778]LogBlueprintUserMessages: [spiritOrbOG_188] -351.294006
+[2017.02.09-11.40.21:510][784]LogBlueprintUserMessages: [spiritOrbOG_188] -336.294006
+[2017.02.09-11.40.21:623][791]LogBlueprintUserMessages: [spiritOrbOG_188] -321.294006
+[2017.02.09-11.40.21:720][797]LogBlueprintUserMessages: [spiritOrbOG_188] -306.294006
+[2017.02.09-11.40.21:817][803]LogBlueprintUserMessages: [spiritOrbOG_188] -291.294006
+[2017.02.09-11.40.21:914][809]LogBlueprintUserMessages: [spiritOrbOG_188] -276.294006
+[2017.02.09-11.40.22:011][815]LogBlueprintUserMessages: [spiritOrbOG_188] -261.294006
+[2017.02.09-11.40.22:124][822]LogBlueprintUserMessages: [spiritOrbOG_188] -246.294006
+[2017.02.09-11.40.22:220][828]LogBlueprintUserMessages: [spiritOrbOG_188] -231.294006
+[2017.02.09-11.40.22:317][834]LogBlueprintUserMessages: [spiritOrbOG_188] -216.294006
+[2017.02.09-11.40.22:414][840]LogBlueprintUserMessages: [spiritOrbOG_188] -201.294006
+[2017.02.09-11.40.22:511][846]LogBlueprintUserMessages: [spiritOrbOG_188] -186.294006
+[2017.02.09-11.40.22:624][853]LogBlueprintUserMessages: [spiritOrbOG_188] -171.294006
+[2017.02.09-11.40.22:720][859]LogBlueprintUserMessages: [spiritOrbOG_188] -156.294006
+[2017.02.09-11.40.22:817][865]LogBlueprintUserMessages: [spiritOrbOG_188] -141.294006
+[2017.02.09-11.40.22:914][871]LogBlueprintUserMessages: [spiritOrbOG_188] -126.294006
+[2017.02.09-11.40.23:011][877]LogBlueprintUserMessages: [spiritOrbOG_188] -111.294006
+[2017.02.09-11.40.23:123][884]LogBlueprintUserMessages: [spiritOrbOG_188] -96.294006
+[2017.02.09-11.40.23:221][890]LogBlueprintUserMessages: [spiritOrbOG_188] -81.294006
+[2017.02.09-11.40.23:318][896]LogBlueprintUserMessages: [spiritOrbOG_188] -66.294006
+[2017.02.09-11.40.23:414][902]LogBlueprintUserMessages: [spiritOrbOG_188] -51.294006
+[2017.02.09-11.40.23:511][908]LogBlueprintUserMessages: [spiritOrbOG_188] -36.294006
+[2017.02.09-11.40.23:624][915]LogBlueprintUserMessages: [spiritOrbOG_188] -21.294006
+[2017.02.09-11.40.23:720][921]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.23:818][927]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.23:914][933]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.24:011][939]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.24:123][946]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.24:221][952]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.24:317][958]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.24:414][964]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.24:511][970]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.24:624][977]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.24:720][983]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.24:817][989]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.24:914][995]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.25:011][  1]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.25:124][  8]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.25:220][ 14]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.25:317][ 20]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.25:414][ 26]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.25:511][ 32]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.25:624][ 39]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.25:721][ 45]LogBlueprintUserMessages: [spiritOrbOG_188] 580.854187
+[2017.02.09-11.40.25:817][ 51]LogBlueprintUserMessages: [spiritOrbOG_188] 565.854187
+[2017.02.09-11.40.25:914][ 57]LogBlueprintUserMessages: [spiritOrbOG_188] 550.854187
+[2017.02.09-11.40.26:011][ 63]LogBlueprintUserMessages: [spiritOrbOG_188] 535.854187
+[2017.02.09-11.40.26:124][ 70]LogBlueprintUserMessages: [spiritOrbOG_188] 520.854187
+[2017.02.09-11.40.26:221][ 76]LogBlueprintUserMessages: [spiritOrbOG_188] 505.854187
+[2017.02.09-11.40.26:317][ 82]LogBlueprintUserMessages: [spiritOrbOG_188] 490.854187
+[2017.02.09-11.40.26:414][ 88]LogBlueprintUserMessages: [spiritOrbOG_188] 475.854187
+[2017.02.09-11.40.26:511][ 94]LogBlueprintUserMessages: [spiritOrbOG_188] 460.854187
+[2017.02.09-11.40.26:624][101]LogBlueprintUserMessages: [spiritOrbOG_188] 445.854187
+[2017.02.09-11.40.26:721][107]LogBlueprintUserMessages: [spiritOrbOG_188] 430.854187
+[2017.02.09-11.40.26:817][113]LogBlueprintUserMessages: [spiritOrbOG_188] 415.854187
+[2017.02.09-11.40.26:914][119]LogBlueprintUserMessages: [spiritOrbOG_188] 400.854187
+[2017.02.09-11.40.27:011][125]LogBlueprintUserMessages: [spiritOrbOG_188] 385.854187
+[2017.02.09-11.40.27:124][132]LogBlueprintUserMessages: [spiritOrbOG_188] 370.854187
+[2017.02.09-11.40.27:221][138]LogBlueprintUserMessages: [spiritOrbOG_188] 355.854187
+[2017.02.09-11.40.27:318][144]LogBlueprintUserMessages: [spiritOrbOG_188] 340.854187
+[2017.02.09-11.40.27:415][150]LogBlueprintUserMessages: [spiritOrbOG_188] 325.854187
+[2017.02.09-11.40.27:511][156]LogBlueprintUserMessages: [spiritOrbOG_188] 310.854187
+[2017.02.09-11.40.27:624][163]LogBlueprintUserMessages: [spiritOrbOG_188] 295.854187
+[2017.02.09-11.40.27:721][169]LogBlueprintUserMessages: [spiritOrbOG_188] 280.854187
+[2017.02.09-11.40.27:817][175]LogBlueprintUserMessages: [corruptionCube41] 280.854187
+[2017.02.09-11.40.27:817][175]LogBlueprintUserMessages: [spiritOrbOG_188] 265.854187
+[2017.02.09-11.40.27:835][176]LogBlueprintUserMessages: [spiritOrbOG_188] -280.854187
+[2017.02.09-11.40.27:914][181]LogBlueprintUserMessages: [spiritOrbOG_188] -265.854187
+[2017.02.09-11.40.28:011][187]LogBlueprintUserMessages: [spiritOrbOG_188] -250.854172
+[2017.02.09-11.40.28:124][194]LogBlueprintUserMessages: [spiritOrbOG_188] -235.854172
+[2017.02.09-11.40.28:221][200]LogBlueprintUserMessages: [spiritOrbOG_188] -220.854172
+[2017.02.09-11.40.28:318][206]LogBlueprintUserMessages: [spiritOrbOG_188] -205.854172
+[2017.02.09-11.40.28:414][212]LogBlueprintUserMessages: [spiritOrbOG_188] -190.854172
+[2017.02.09-11.40.28:511][218]LogBlueprintUserMessages: [spiritOrbOG_188] -175.854172
+[2017.02.09-11.40.28:624][225]LogBlueprintUserMessages: [spiritOrbOG_188] -160.854172
+[2017.02.09-11.40.28:721][231]LogBlueprintUserMessages: [spiritOrbOG_188] -145.854172
+[2017.02.09-11.40.28:817][237]LogBlueprintUserMessages: [spiritOrbOG_188] -130.854172
+[2017.02.09-11.40.28:914][243]LogBlueprintUserMessages: [spiritOrbOG_188] -115.854172
+[2017.02.09-11.40.29:011][249]LogBlueprintUserMessages: [spiritOrbOG_188] -100.854172
+[2017.02.09-11.40.29:124][256]LogBlueprintUserMessages: [spiritOrbOG_188] -85.854172
+[2017.02.09-11.40.29:221][262]LogBlueprintUserMessages: [spiritOrbOG_188] -70.854172
+[2017.02.09-11.40.29:318][268]LogBlueprintUserMessages: [spiritOrbOG_188] -55.854172
+[2017.02.09-11.40.29:414][274]LogBlueprintUserMessages: [spiritOrbOG_188] -40.854172
+[2017.02.09-11.40.29:511][280]LogBlueprintUserMessages: [spiritOrbOG_188] -25.854172
+[2017.02.09-11.40.29:624][287]LogBlueprintUserMessages: [spiritOrbOG_188] -10.854172
+[2017.02.09-11.40.29:721][293]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.29:817][299]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.29:914][305]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.30:011][311]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.30:124][318]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.30:221][324]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.30:319][330]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.30:415][336]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.30:513][342]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.30:609][348]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.30:722][355]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.30:819][361]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.30:916][367]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.31:014][373]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.31:110][379]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.31:223][386]LogBlueprintUserMessages: [spiritOrbOG_188] 613.518921
+[2017.02.09-11.40.31:319][392]LogBlueprintUserMessages: [spiritOrbOG_188] 575.325439
+[2017.02.09-11.40.31:416][398]LogBlueprintUserMessages: [spiritOrbOG_188] 511.552246
+[2017.02.09-11.40.31:497][403]LogBlueprintUserMessages: [superWall6] 511.552246
+[2017.02.09-11.40.31:513][404]LogBlueprintUserMessages: [spiritOrbOG_188] 119.075653
+[2017.02.09-11.40.31:545][406]LogBlueprintUserMessages: [spiritOrbOG_188] 511.552246
+[2017.02.09-11.40.31:610][410]LogBlueprintUserMessages: [spiritOrbOG_188] 496.552246
+[2017.02.09-11.40.31:722][417]LogBlueprintUserMessages: [spiritOrbOG_188] 481.552246
+[2017.02.09-11.40.31:819][423]LogBlueprintUserMessages: [corruptionCube40] 481.552246
+[2017.02.09-11.40.31:819][423]LogBlueprintUserMessages: [spiritOrbOG_188] 466.552246
+[2017.02.09-11.40.31:835][424]LogBlueprintUserMessages: [spiritOrbOG_188] 481.552246
+[2017.02.09-11.40.31:916][429]LogBlueprintUserMessages: [spiritOrbOG_188] 466.552246
+[2017.02.09-11.40.31:981][433]LogBlueprintUserMessages: [spiritOrbOG_188] -481.552246
+[2017.02.09-11.40.32:013][435]LogBlueprintUserMessages: [spiritOrbOG_188] -466.552246
+[2017.02.09-11.40.32:110][441]LogBlueprintUserMessages: [spiritOrbOG_188] -451.552246
+[2017.02.09-11.40.32:142][443]LogBlueprintUserMessages: [superWall6] -451.552246
+[2017.02.09-11.40.32:174][445]LogBlueprintUserMessages: [spiritOrbOG_188] -451.552246
+[2017.02.09-11.40.32:222][448]LogBlueprintUserMessages: [spiritOrbOG_188] -436.552246
+[2017.02.09-11.40.32:319][454]LogBlueprintUserMessages: [spiritOrbOG_188] -421.552246
+[2017.02.09-11.40.32:416][460]LogBlueprintUserMessages: [spiritOrbOG_188] -406.552246
+[2017.02.09-11.40.32:513][466]LogBlueprintUserMessages: [spiritOrbOG_188] -391.552246
+[2017.02.09-11.40.32:609][472]LogBlueprintUserMessages: [spiritOrbOG_188] -376.552246
+[2017.02.09-11.40.32:722][479]LogBlueprintUserMessages: [spiritOrbOG_188] -361.552246
+[2017.02.09-11.40.32:820][485]LogBlueprintUserMessages: [spiritOrbOG_188] -346.552246
+[2017.02.09-11.40.32:916][491]LogBlueprintUserMessages: [spiritOrbOG_188] -331.552246
+[2017.02.09-11.40.33:013][497]LogBlueprintUserMessages: [spiritOrbOG_188] -316.552246
+[2017.02.09-11.40.33:110][503]LogBlueprintUserMessages: [spiritOrbOG_188] -301.552246
+[2017.02.09-11.40.33:224][510]LogBlueprintUserMessages: [spiritOrbOG_188] -286.552246
+[2017.02.09-11.40.33:319][516]LogBlueprintUserMessages: [spiritOrbOG_188] -271.552246
+[2017.02.09-11.40.33:417][522]LogBlueprintUserMessages: [spiritOrbOG_188] -256.552246
+[2017.02.09-11.40.33:513][528]LogBlueprintUserMessages: [spiritOrbOG_188] -241.552246
+[2017.02.09-11.40.33:610][534]LogBlueprintUserMessages: [spiritOrbOG_188] -226.552246
+[2017.02.09-11.40.33:723][541]LogBlueprintUserMessages: [spiritOrbOG_188] -211.552246
+[2017.02.09-11.40.33:821][547]LogBlueprintUserMessages: [spiritOrbOG_188] -196.552246
+[2017.02.09-11.40.33:916][553]LogBlueprintUserMessages: [spiritOrbOG_188] -181.552246
+[2017.02.09-11.40.34:013][559]LogBlueprintUserMessages: [spiritOrbOG_188] -166.552246
+[2017.02.09-11.40.34:110][565]LogBlueprintUserMessages: [spiritOrbOG_188] -151.552246
+[2017.02.09-11.40.34:223][572]LogBlueprintUserMessages: [spiritOrbOG_188] -136.552246
+[2017.02.09-11.40.34:319][578]LogBlueprintUserMessages: [spiritOrbOG_188] -121.552246
+[2017.02.09-11.40.34:416][584]LogBlueprintUserMessages: [spiritOrbOG_188] -106.552246
+[2017.02.09-11.40.34:513][590]LogBlueprintUserMessages: [spiritOrbOG_188] -91.552246
+[2017.02.09-11.40.34:609][596]LogBlueprintUserMessages: [spiritOrbOG_188] -76.552246
+[2017.02.09-11.40.34:723][603]LogBlueprintUserMessages: [spiritOrbOG_188] -61.552246
+[2017.02.09-11.40.34:819][609]LogBlueprintUserMessages: [spiritOrbOG_188] -46.552246
+[2017.02.09-11.40.34:916][615]LogBlueprintUserMessages: [spiritOrbOG_188] -31.552246
+[2017.02.09-11.40.35:012][621]LogBlueprintUserMessages: [spiritOrbOG_188] -16.552246
+[2017.02.09-11.40.35:110][627]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.35:223][634]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.35:319][640]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.35:416][646]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.35:513][652]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.35:610][658]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.35:723][665]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.35:819][671]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.35:916][677]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.36:013][683]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.36:110][689]LogBlueprintUserMessages: [spiritOrbOG_188] 539.401733
+[2017.02.09-11.40.36:224][696]LogBlueprintUserMessages: [spiritOrbOG_188] 524.401733
+[2017.02.09-11.40.36:320][702]LogBlueprintUserMessages: [spiritOrbOG_188] 509.401733
+[2017.02.09-11.40.36:417][708]LogBlueprintUserMessages: [spiritOrbOG_188] 494.401733
+[2017.02.09-11.40.36:514][714]LogBlueprintUserMessages: [spiritOrbOG_188] 479.401733
+[2017.02.09-11.40.36:611][720]LogBlueprintUserMessages: [spiritOrbOG_188] 464.401733
+[2017.02.09-11.40.36:723][727]LogBlueprintUserMessages: [spiritOrbOG_188] 449.401733
+[2017.02.09-11.40.36:820][733]LogBlueprintUserMessages: [spiritOrbOG_188] 434.401733
+[2017.02.09-11.40.36:917][739]LogBlueprintUserMessages: [spiritOrbOG_188] 419.401733
+[2017.02.09-11.40.37:014][745]LogBlueprintUserMessages: [spiritOrbOG_188] 404.401733
+[2017.02.09-11.40.37:111][751]LogBlueprintUserMessages: [spiritOrbOG_188] 389.401733
+[2017.02.09-11.40.37:127][752]LogBlueprintUserMessages: [corruptionCube13] 389.401733
+[2017.02.09-11.40.37:143][753]LogBlueprintUserMessages: [spiritOrbOG_188] 389.401733
+[2017.02.09-11.40.37:223][758]LogBlueprintUserMessages: [spiritOrbOG_188] 374.401733
+[2017.02.09-11.40.37:288][762]LogBlueprintUserMessages: [corruptionCube27] 374.401733
+[2017.02.09-11.40.37:304][763]LogBlueprintUserMessages: [spiritOrbOG_188] -374.401733
+[2017.02.09-11.40.37:320][764]LogBlueprintUserMessages: [spiritOrbOG_188] -359.401733
+[2017.02.09-11.40.37:417][770]LogBlueprintUserMessages: [spiritOrbOG_188] -344.401733
+[2017.02.09-11.40.37:514][776]LogBlueprintUserMessages: [spiritOrbOG_188] -329.401733
+[2017.02.09-11.40.37:610][782]LogBlueprintUserMessages: [spiritOrbOG_188] -314.401733
+[2017.02.09-11.40.37:724][789]LogBlueprintUserMessages: [spiritOrbOG_188] -299.401733
+[2017.02.09-11.40.37:820][795]LogBlueprintUserMessages: [spiritOrbOG_188] -284.401733
+[2017.02.09-11.40.37:917][801]LogBlueprintUserMessages: [spiritOrbOG_188] -269.401733
+[2017.02.09-11.40.38:014][807]LogBlueprintUserMessages: [spiritOrbOG_188] -254.401733
+[2017.02.09-11.40.38:110][813]LogBlueprintUserMessages: [spiritOrbOG_188] -239.401733
+[2017.02.09-11.40.38:224][820]LogBlueprintUserMessages: [spiritOrbOG_188] -224.401733
+[2017.02.09-11.40.38:321][826]LogBlueprintUserMessages: [spiritOrbOG_188] -209.401733
+[2017.02.09-11.40.38:417][832]LogBlueprintUserMessages: [spiritOrbOG_188] -194.401733
+[2017.02.09-11.40.38:513][838]LogBlueprintUserMessages: [spiritOrbOG_188] -179.401733
+[2017.02.09-11.40.38:610][844]LogBlueprintUserMessages: [spiritOrbOG_188] -164.401733
+[2017.02.09-11.40.38:724][851]LogBlueprintUserMessages: [spiritOrbOG_188] -149.401733
+[2017.02.09-11.40.38:820][857]LogBlueprintUserMessages: [spiritOrbOG_188] -134.401733
+[2017.02.09-11.40.38:917][863]LogBlueprintUserMessages: [spiritOrbOG_188] -119.401733
+[2017.02.09-11.40.39:014][869]LogBlueprintUserMessages: [spiritOrbOG_188] -104.401733
+[2017.02.09-11.40.39:111][875]LogBlueprintUserMessages: [spiritOrbOG_188] -89.401733
+[2017.02.09-11.40.39:209][881]LogBlueprintUserMessages: [spiritOrbOG_188] -74.401733
+[2017.02.09-11.40.39:321][888]LogBlueprintUserMessages: [spiritOrbOG_188] -59.401733
+[2017.02.09-11.40.39:418][894]LogBlueprintUserMessages: [spiritOrbOG_188] -44.401733
+[2017.02.09-11.40.39:515][900]LogBlueprintUserMessages: [spiritOrbOG_188] -29.401733
+[2017.02.09-11.40.39:612][906]LogBlueprintUserMessages: [spiritOrbOG_188] -14.401733
+[2017.02.09-11.40.39:708][912]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.39:821][919]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.39:918][925]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.40:015][931]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.40:111][937]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.40:209][943]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.40:321][950]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.40:418][956]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.40:516][962]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.40:612][968]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.40:708][974]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.40:821][981]LogBlueprintUserMessages: [spiritOrbOG_188] 601.761292
+[2017.02.09-11.40.40:918][987]LogBlueprintUserMessages: [spiritOrbOG_188] 586.761292
+[2017.02.09-11.40.41:016][993]LogBlueprintUserMessages: [spiritOrbOG_188] 571.761292
+[2017.02.09-11.40.41:112][999]LogBlueprintUserMessages: [spiritOrbOG_188] 556.761292
+[2017.02.09-11.40.41:209][  5]LogBlueprintUserMessages: [spiritOrbOG_188] 541.761292
+[2017.02.09-11.40.41:321][ 12]LogBlueprintUserMessages: [spiritOrbOG_188] 526.761292
+[2017.02.09-11.40.41:418][ 18]LogBlueprintUserMessages: [spiritOrbOG_188] 511.761292
+[2017.02.09-11.40.41:516][ 24]LogBlueprintUserMessages: [spiritOrbOG_188] 496.761292
+[2017.02.09-11.40.41:580][ 28]LogBlueprintUserMessages: [corruptionCube25] 496.761292
+[2017.02.09-11.40.41:596][ 29]LogBlueprintUserMessages: [spiritOrbOG_188] 496.761292
+[2017.02.09-11.40.41:611][ 30]LogBlueprintUserMessages: [spiritOrbOG_188] 481.761292
+[2017.02.09-11.40.41:709][ 36]LogBlueprintUserMessages: [spiritOrbOG_188] 466.761292
+[2017.02.09-11.40.41:741][ 38]LogBlueprintUserMessages: [corruptionCube62] 466.761292
+[2017.02.09-11.40.41:757][ 39]LogBlueprintUserMessages: [spiritOrbOG_188] -466.761292
+[2017.02.09-11.40.41:821][ 43]LogBlueprintUserMessages: [spiritOrbOG_188] -451.761292
+[2017.02.09-11.40.41:837][ 44]LogBlueprintUserMessages: [corruptionCube23] -451.761292
+[2017.02.09-11.40.41:853][ 45]LogBlueprintUserMessages: [spiritOrbOG_188] -451.761261
+[2017.02.09-11.40.41:918][ 49]LogBlueprintUserMessages: [spiritOrbOG_188] -436.761261
+[2017.02.09-11.40.42:015][ 55]LogBlueprintUserMessages: [spiritOrbOG_188] -421.761261
+[2017.02.09-11.40.42:114][ 61]LogBlueprintUserMessages: [spiritOrbOG_188] -406.761261
+[2017.02.09-11.40.42:209][ 67]LogBlueprintUserMessages: [spiritOrbOG_188] -391.761261
+[2017.02.09-11.40.42:323][ 74]LogBlueprintUserMessages: [spiritOrbOG_188] -376.761261
+[2017.02.09-11.40.42:419][ 80]LogBlueprintUserMessages: [spiritOrbOG_188] -361.761261
+[2017.02.09-11.40.42:516][ 86]LogBlueprintUserMessages: [spiritOrbOG_188] -346.761261
+[2017.02.09-11.40.42:613][ 92]LogBlueprintUserMessages: [spiritOrbOG_188] -331.761261
+[2017.02.09-11.40.42:711][ 98]LogBlueprintUserMessages: [spiritOrbOG_188] -316.761261
+[2017.02.09-11.40.42:822][105]LogBlueprintUserMessages: [spiritOrbOG_188] -301.761261
+[2017.02.09-11.40.42:919][111]LogBlueprintUserMessages: [spiritOrbOG_188] -286.761261
+[2017.02.09-11.40.43:016][117]LogBlueprintUserMessages: [spiritOrbOG_188] -271.761261
+[2017.02.09-11.40.43:113][123]LogBlueprintUserMessages: [spiritOrbOG_188] -256.761261
+[2017.02.09-11.40.43:210][129]LogBlueprintUserMessages: [spiritOrbOG_188] -241.761261
+[2017.02.09-11.40.43:322][136]LogBlueprintUserMessages: [spiritOrbOG_188] -226.761261
+[2017.02.09-11.40.43:419][142]LogBlueprintUserMessages: [spiritOrbOG_188] -211.761261
+[2017.02.09-11.40.43:516][148]LogBlueprintUserMessages: [spiritOrbOG_188] -196.761261
+[2017.02.09-11.40.43:613][154]LogBlueprintUserMessages: [spiritOrbOG_188] -181.761261
+[2017.02.09-11.40.43:709][160]LogBlueprintUserMessages: [spiritOrbOG_188] -166.761261
+[2017.02.09-11.40.43:823][167]LogBlueprintUserMessages: [spiritOrbOG_188] 458.063049
+[2017.02.09-11.40.43:919][173]LogBlueprintUserMessages: [spiritOrbOG_188] 443.063049
+[2017.02.09-11.40.44:016][179]LogBlueprintUserMessages: [spiritOrbOG_188] 428.063049
+[2017.02.09-11.40.44:112][185]LogBlueprintUserMessages: [spiritOrbOG_188] 413.063049
+[2017.02.09-11.40.44:210][191]LogBlueprintUserMessages: [spiritOrbOG_188] 398.063049
+[2017.02.09-11.40.44:322][198]LogBlueprintUserMessages: [spiritOrbOG_188] 383.063049
+[2017.02.09-11.40.44:419][204]LogBlueprintUserMessages: [spiritOrbOG_188] 368.063049
+[2017.02.09-11.40.44:516][210]LogBlueprintUserMessages: [spiritOrbOG_188] 353.063049
+[2017.02.09-11.40.44:613][216]LogBlueprintUserMessages: [spiritOrbOG_188] 338.063049
+[2017.02.09-11.40.44:694][221]LogBlueprintUserMessages: [corruptionCube6] 338.063049
+[2017.02.09-11.40.44:710][222]LogBlueprintUserMessages: [spiritOrbOG_188] -338.063049
+[2017.02.09-11.40.44:710][222]LogBlueprintUserMessages: [spiritOrbOG_188] -323.063049
+[2017.02.09-11.40.44:824][229]LogBlueprintUserMessages: [spiritOrbOG_188] -308.063049
+[2017.02.09-11.40.44:920][235]LogBlueprintUserMessages: [spiritOrbOG_188] -293.063049
+[2017.02.09-11.40.45:016][241]LogBlueprintUserMessages: [spiritOrbOG_188] -278.063049
+[2017.02.09-11.40.45:113][247]LogBlueprintUserMessages: [spiritOrbOG_188] -263.063049
+[2017.02.09-11.40.45:210][253]LogBlueprintUserMessages: [spiritOrbOG_188] -248.063049
+[2017.02.09-11.40.45:323][260]LogBlueprintUserMessages: [spiritOrbOG_188] -233.063049
+[2017.02.09-11.40.45:420][266]LogBlueprintUserMessages: [spiritOrbOG_188] -218.063049
+[2017.02.09-11.40.45:517][272]LogBlueprintUserMessages: [spiritOrbOG_188] -203.063049
+[2017.02.09-11.40.45:613][278]LogBlueprintUserMessages: [spiritOrbOG_188] -188.063049
+[2017.02.09-11.40.45:710][284]LogBlueprintUserMessages: [spiritOrbOG_188] -173.063049
+[2017.02.09-11.40.45:823][291]LogBlueprintUserMessages: [spiritOrbOG_188] -158.063049
+[2017.02.09-11.40.45:921][297]LogBlueprintUserMessages: [spiritOrbOG_188] -143.063049
+[2017.02.09-11.40.46:017][303]LogBlueprintUserMessages: [spiritOrbOG_188] -128.063049
+[2017.02.09-11.40.46:115][309]LogBlueprintUserMessages: [spiritOrbOG_188] -113.063049
+[2017.02.09-11.40.46:210][315]LogBlueprintUserMessages: [spiritOrbOG_188] -98.063049
+[2017.02.09-11.40.46:323][322]LogBlueprintUserMessages: [spiritOrbOG_188] -83.063049
+[2017.02.09-11.40.46:420][328]LogBlueprintUserMessages: [spiritOrbOG_188] -68.063049
+[2017.02.09-11.40.46:517][334]LogBlueprintUserMessages: [spiritOrbOG_188] -53.063049
+[2017.02.09-11.40.46:614][340]LogBlueprintUserMessages: [spiritOrbOG_188] -38.063049
+[2017.02.09-11.40.46:710][346]LogBlueprintUserMessages: [spiritOrbOG_188] -23.063049
+[2017.02.09-11.40.46:824][353]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.46:920][359]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.47:017][365]LogBlueprintUserMessages: [spiritOrbOG_188] 685.0
+[2017.02.09-11.40.47:114][371]LogBlueprintUserMessages: [spiritOrbOG_188] 670.0
+[2017.02.09-11.40.47:210][377]LogBlueprintUserMessages: [spiritOrbOG_188] 655.0
+[2017.02.09-11.40.47:323][384]LogBlueprintUserMessages: [spiritOrbOG_188] 640.0
+[2017.02.09-11.40.47:420][390]LogBlueprintUserMessages: [spiritOrbOG_188] 625.0
+[2017.02.09-11.40.47:518][396]LogBlueprintUserMessages: [spiritOrbOG_188] 610.0
+[2017.02.09-11.40.47:614][402]LogBlueprintUserMessages: [spiritOrbOG_188] 595.0
+[2017.02.09-11.40.47:630][403]LogBlueprintUserMessages: [corruptionCube8] 595.0
+[2017.02.09-11.40.47:646][404]LogBlueprintUserMessages: [spiritOrbOG_188] -595.0
+[2017.02.09-11.40.47:711][408]LogBlueprintUserMessages: [spiritOrbOG_188] -580.0
+[2017.02.09-11.40.47:823][415]LogBlueprintUserMessages: [spiritOrbOG_188] -565.0
+[2017.02.09-11.40.47:920][421]LogBlueprintUserMessages: [spiritOrbOG_188] -550.0
+[2017.02.09-11.40.48:016][427]LogBlueprintUserMessages: [spiritOrbOG_188] -535.0
+[2017.02.09-11.40.48:113][433]LogBlueprintUserMessages: [spiritOrbOG_188] -520.0
+[2017.02.09-11.40.48:210][439]LogBlueprintUserMessages: [spiritOrbOG_188] 421.723785
+[2017.02.09-11.40.48:323][446]LogBlueprintUserMessages: [spiritOrbOG_188] 420.819672
+[2017.02.09-11.40.48:420][452]LogBlueprintUserMessages: [spiritOrbOG_188] 405.819672
+[2017.02.09-11.40.48:517][458]LogBlueprintUserMessages: [spiritOrbOG_188] 390.819672
+[2017.02.09-11.40.48:614][464]LogBlueprintUserMessages: [spiritOrbOG_188] 375.819672
+[2017.02.09-11.40.48:629][465]LogBlueprintUserMessages: [corruptionCube5] 375.819672
+[2017.02.09-11.40.48:648][466]LogBlueprintUserMessages: [spiritOrbOG_188] -375.819672
+[2017.02.09-11.40.48:710][470]LogBlueprintUserMessages: [spiritOrbOG_188] -360.819672
+[2017.02.09-11.40.48:823][477]LogBlueprintUserMessages: [spiritOrbOG_188] -345.819672
+[2017.02.09-11.40.48:920][483]LogBlueprintUserMessages: [spiritOrbOG_188] -330.819672
+[2017.02.09-11.40.49:017][489]LogBlueprintUserMessages: [spiritOrbOG_188] -315.819672
+[2017.02.09-11.40.49:113][495]LogBlueprintUserMessages: [spiritOrbOG_188] -300.819672
+[2017.02.09-11.40.49:210][501]LogBlueprintUserMessages: [spiritOrbOG_188] -285.819672
+[2017.02.09-11.40.49:323][508]LogBlueprintUserMessages: [spiritOrbOG_188] -270.819672
+[2017.02.09-11.40.49:420][514]LogBlueprintUserMessages: [spiritOrbOG_188] -255.819672
+[2017.02.09-11.40.49:517][520]LogBlueprintUserMessages: [spiritOrbOG_188] -240.819672
+[2017.02.09-11.40.49:614][526]LogBlueprintUserMessages: [spiritOrbOG_188] -225.819672
+[2017.02.09-11.40.49:710][532]LogBlueprintUserMessages: [spiritOrbOG_188] -210.819672
+[2017.02.09-11.40.49:823][539]LogBlueprintUserMessages: [spiritOrbOG_188] -195.819672
+[2017.02.09-11.40.49:920][545]LogBlueprintUserMessages: [spiritOrbOG_188] -180.819672
+[2017.02.09-11.40.50:017][551]LogBlueprintUserMessages: [spiritOrbOG_188] -165.819672
+[2017.02.09-11.40.50:114][557]LogBlueprintUserMessages: [spiritOrbOG_188] -150.819672
+[2017.02.09-11.40.50:210][563]LogBlueprintUserMessages: [spiritOrbOG_188] 557.398315
+[2017.02.09-11.40.50:324][570]LogBlueprintUserMessages: [spiritOrbOG_188] 542.398315
+[2017.02.09-11.40.50:421][576]LogBlueprintUserMessages: [spiritOrbOG_188] 527.398315
+[2017.02.09-11.40.50:517][582]LogBlueprintUserMessages: [spiritOrbOG_188] 684.849426
+[2017.02.09-11.40.50:614][588]LogBlueprintUserMessages: [spiritOrbOG_188] 669.849426
+[2017.02.09-11.40.50:711][594]LogBlueprintUserMessages: [spiritOrbOG_188] 654.849426
+[2017.02.09-11.40.50:824][601]LogBlueprintUserMessages: [spiritOrbOG_188] 639.849426
+[2017.02.09-11.40.50:920][607]LogBlueprintUserMessages: [spiritOrbOG_188] 624.849426
+[2017.02.09-11.40.50:952][609]LogBlueprintUserMessages: [corruptionCube10] 624.849426
+[2017.02.09-11.40.50:968][610]LogBlueprintUserMessages: [spiritOrbOG_188] -624.849426
+[2017.02.09-11.40.51:018][613]LogBlueprintUserMessages: [spiritOrbOG_188] -609.849426
+[2017.02.09-11.40.51:114][619]LogBlueprintUserMessages: [spiritOrbOG_188] -594.849426
+[2017.02.09-11.40.51:210][625]LogBlueprintUserMessages: [spiritOrbOG_188] -579.849426
+[2017.02.09-11.40.51:323][632]LogBlueprintUserMessages: [spiritOrbOG_188] -564.849426
+[2017.02.09-11.40.51:420][638]LogBlueprintUserMessages: [spiritOrbOG_188] -549.849426
+[2017.02.09-11.40.51:517][644]LogBlueprintUserMessages: [spiritOrbOG_188] -534.849426
+[2017.02.09-11.40.51:614][650]LogBlueprintUserMessages: [spiritOrbOG_188] 561.98584
+[2017.02.09-11.40.51:710][656]LogBlueprintUserMessages: [spiritOrbOG_188] 546.98584
+[2017.02.09-11.40.51:823][663]LogBlueprintUserMessages: [spiritOrbOG_188] 531.98584
+[2017.02.09-11.40.51:920][669]LogBlueprintUserMessages: [spiritOrbOG_188] 516.98584
+[2017.02.09-11.40.52:017][675]LogBlueprintUserMessages: [spiritOrbOG_188] 501.98584
+[2017.02.09-11.40.52:114][681]LogBlueprintUserMessages: [spiritOrbOG_188] 486.98584
+[2017.02.09-11.40.52:211][687]LogBlueprintUserMessages: [spiritOrbOG_188] 471.98584
+[2017.02.09-11.40.52:323][694]LogBlueprintUserMessages: [spiritOrbOG_188] 456.98584
+[2017.02.09-11.40.52:372][697]LogBlueprintUserMessages: [corruptionCube14] 456.98584
+[2017.02.09-11.40.52:388][698]LogBlueprintUserMessages: [spiritOrbOG_188] 456.98584
+[2017.02.09-11.40.52:420][700]LogBlueprintUserMessages: [spiritOrbOG_188] 441.98584
+[2017.02.09-11.40.52:517][706]LogBlueprintUserMessages: [spiritOrbOG_188] 426.98584
+[2017.02.09-11.40.52:565][709]LogBlueprintUserMessages: [corruptionCube43] 426.98584
+[2017.02.09-11.40.52:581][710]LogBlueprintUserMessages: [spiritOrbOG_188] -426.98584
+[2017.02.09-11.40.52:613][712]LogBlueprintUserMessages: [spiritOrbOG_188] -411.98584
+[2017.02.09-11.40.52:711][718]LogBlueprintUserMessages: [spiritOrbOG_188] -396.98584
+[2017.02.09-11.40.52:824][725]LogBlueprintUserMessages: [spiritOrbOG_188] -381.98584
+[2017.02.09-11.40.52:920][731]LogBlueprintUserMessages: [spiritOrbOG_188] -366.98584
+[2017.02.09-11.40.53:018][737]LogBlueprintUserMessages: [spiritOrbOG_188] -351.98584
+[2017.02.09-11.40.53:114][743]LogBlueprintUserMessages: [spiritOrbOG_188] -336.98584
+[2017.02.09-11.40.53:211][749]LogBlueprintUserMessages: [spiritOrbOG_188] -321.98584
+[2017.02.09-11.40.53:324][756]LogBlueprintUserMessages: [spiritOrbOG_188] -306.98584
+[2017.02.09-11.40.53:420][762]LogBlueprintUserMessages: [spiritOrbOG_188] -291.98584
+[2017.02.09-11.40.53:518][768]LogBlueprintUserMessages: [spiritOrbOG_188] -276.98584
+[2017.02.09-11.40.53:613][774]LogBlueprintUserMessages: [spiritOrbOG_188] -261.98584
+[2017.02.09-11.40.53:710][780]LogBlueprintUserMessages: [spiritOrbOG_188] -246.98584
+[2017.02.09-11.40.53:823][787]LogBlueprintUserMessages: [spiritOrbOG_188] -231.98584
+[2017.02.09-11.40.53:920][793]LogBlueprintUserMessages: [spiritOrbOG_188] -216.98584
+[2017.02.09-11.40.54:018][799]LogBlueprintUserMessages: [spiritOrbOG_188] -201.98584
+[2017.02.09-11.40.54:114][805]LogBlueprintUserMessages: [spiritOrbOG_188] -186.98584
+[2017.02.09-11.40.54:211][811]LogBlueprintUserMessages: [spiritOrbOG_188] -171.98584
+[2017.02.09-11.40.54:323][818]LogBlueprintUserMessages: [spiritOrbOG_188] -156.98584
+[2017.02.09-11.40.54:420][824]LogBlueprintUserMessages: [spiritOrbOG_188] -141.98584
+[2017.02.09-11.40.54:517][830]LogBlueprintUserMessages: [spiritOrbOG_188] -126.98584
+[2017.02.09-11.40.54:614][836]LogBlueprintUserMessages: [spiritOrbOG_188] -111.98584
+[2017.02.09-11.40.54:711][842]LogBlueprintUserMessages: [spiritOrbOG_188] -96.98584
+[2017.02.09-11.40.54:824][849]LogBlueprintUserMessages: [spiritOrbOG_188] -81.98584
+[2017.02.09-11.40.54:920][855]LogBlueprintUserMessages: [spiritOrbOG_188] -66.98584
+[2017.02.09-11.40.55:017][861]LogBlueprintUserMessages: [spiritOrbOG_188] -51.98584
+[2017.02.09-11.40.55:115][867]LogBlueprintUserMessages: [spiritOrbOG_188] 684.5755
+[2017.02.09-11.40.55:210][873]LogBlueprintUserMessages: [spiritOrbOG_188] 669.5755
+[2017.02.09-11.40.55:324][880]LogBlueprintUserMessages: [spiritOrbOG_188] 654.5755
+[2017.02.09-11.40.55:421][886]LogBlueprintUserMessages: [spiritOrbOG_188] 639.5755
+[2017.02.09-11.40.55:517][892]LogBlueprintUserMessages: [spiritOrbOG_188] 624.5755
+[2017.02.09-11.40.55:614][898]LogBlueprintUserMessages: [spiritOrbOG_188] 609.5755
+[2017.02.09-11.40.55:710][904]LogBlueprintUserMessages: [spiritOrbOG_188] 594.5755
+[2017.02.09-11.40.55:808][910]LogBlueprintUserMessages: [corruptionCube22] 594.5755
+[2017.02.09-11.40.55:808][910]LogBlueprintUserMessages: [spiritOrbOG_188] 579.5755
+[2017.02.09-11.40.55:824][911]LogBlueprintUserMessages: [spiritOrbOG_188] 594.5755
+[2017.02.09-11.40.55:921][917]LogBlueprintUserMessages: [spiritOrbOG_188] 579.5755
+[2017.02.09-11.40.55:969][920]LogBlueprintUserMessages: [corruptionCube60] 579.5755
+[2017.02.09-11.40.55:986][921]LogBlueprintUserMessages: [spiritOrbOG_188] -579.5755
+[2017.02.09-11.40.56:018][923]LogBlueprintUserMessages: [spiritOrbOG_188] -564.5755
+[2017.02.09-11.40.56:115][929]LogBlueprintUserMessages: [spiritOrbOG_188] -549.5755
+[2017.02.09-11.40.56:211][935]LogBlueprintUserMessages: [spiritOrbOG_188] -534.5755
+[2017.02.09-11.40.56:308][941]LogBlueprintUserMessages: [spiritOrbOG_188] -519.5755
+[2017.02.09-11.40.56:421][948]LogBlueprintUserMessages: [spiritOrbOG_188] -504.5755
+[2017.02.09-11.40.56:518][954]LogBlueprintUserMessages: [spiritOrbOG_188] -489.5755
+[2017.02.09-11.40.56:614][960]LogBlueprintUserMessages: [spiritOrbOG_188] -474.5755
+[2017.02.09-11.40.56:711][966]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.56:809][972]LogBlueprintUserMessages: [spiritOrbOG_188] 463.980042
+[2017.02.09-11.40.56:921][979]LogBlueprintUserMessages: [spiritOrbOG_188] 448.980042
+[2017.02.09-11.40.57:018][985]LogBlueprintUserMessages: [spiritOrbOG_188] 433.980042
+[2017.02.09-11.40.57:114][991]LogBlueprintUserMessages: [spiritOrbOG_188] 418.980042
+[2017.02.09-11.40.57:211][997]LogBlueprintUserMessages: [spiritOrbOG_188] 403.980042
+[2017.02.09-11.40.57:308][  3]LogBlueprintUserMessages: [spiritOrbOG_188] 388.980042
+[2017.02.09-11.40.57:421][ 10]LogBlueprintUserMessages: [spiritOrbOG_188] 373.980042
+[2017.02.09-11.40.57:437][ 11]LogBlueprintUserMessages: [corruptionCube18] 373.980042
+[2017.02.09-11.40.57:453][ 12]LogBlueprintUserMessages: [spiritOrbOG_188] 373.980042
+[2017.02.09-11.40.57:518][ 16]LogBlueprintUserMessages: [spiritOrbOG_188] 358.980042
+[2017.02.09-11.40.57:615][ 22]LogBlueprintUserMessages: [spiritOrbOG_188] 343.980042
+[2017.02.09-11.40.57:679][ 26]LogBlueprintUserMessages: [corruptionCube45] 343.980042
+[2017.02.09-11.40.57:679][ 26]LogBlueprintUserMessages: [corruptionCube28] 343.980042
+[2017.02.09-11.40.57:695][ 27]LogBlueprintUserMessages: [spiritOrbOG_188] 343.980042
+[2017.02.09-11.40.57:711][ 28]LogBlueprintUserMessages: [spiritOrbOG_188] 328.980042
+[2017.02.09-11.40.57:808][ 34]LogBlueprintUserMessages: [spiritOrbOG_188] 313.980042
+[2017.02.09-11.40.58:089][ 40]LogNet: Browse: /Temp/Autosaves/Game/ThirdPersonBP/Maps/UEDPCThirdPersonExampleMap
+[2017.02.09-11.40.58:093][ 40]LogLoad: LoadMap: /Temp/Autosaves/Game/ThirdPersonBP/Maps/UEDPCThirdPersonExampleMap
+[2017.02.09-11.40.58:165][ 40]LogMemory: Platform Memory Stats for Windows
+[2017.02.09-11.40.58:165][ 40]LogMemory: Process Physical Memory: 727.12 MB used, 767.64 MB peak
+[2017.02.09-11.40.58:165][ 40]LogMemory: Process Virtual Memory: 959.44 MB used, 1033.78 MB peak
+[2017.02.09-11.40.58:165][ 40]LogMemory: Physical Memory: 5987.23 MB used, 8145.96 MB total
+[2017.02.09-11.40.58:165][ 40]LogMemory: Virtual Memory: 1576.64 MB used, 134217728.00 MB total
+[2017.02.09-11.40.58:165][ 40]LogMemory: 
+[2017.02.09-11.40.58:165][ 40]Allocator Stats for TBB: (not implemented)
+[2017.02.09-11.40.58:892][ 40]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.02.09-11.40.58:896][ 40]LogWorld: Game class is 'ThirdPersonGameMode_C'
+[2017.02.09-11.40.58:942][ 40]LogWorld: Bringing World /Temp/Autosaves/Game/ThirdPersonBP/Maps/UEDPCThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2017.02.09-06.40.58
+[2017.02.09-11.40.58:945][ 40]LogWorld: Bringing up level for play took: 0.047664
+[2017.02.09-11.40.58:948][ 40]LogLoad: Took 0.855382 seconds to LoadMap(/Temp/Autosaves/Game/ThirdPersonBP/Maps/UEDPCThirdPersonExampleMap)
+[2017.02.09-11.40.58:952][ 41]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.58:952][ 41]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.58:952][ 41]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.58:952][ 41]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.59:060][ 44]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.59:156][ 50]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.59:253][ 56]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.59:366][ 63]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.59:463][ 69]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.59:560][ 75]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.59:657][ 81]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.59:753][ 87]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.59:866][ 94]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.40.59:963][100]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.00:060][106]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.00:157][112]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.00:253][118]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.00:366][125]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.00:463][131]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.00:560][137]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.00:656][143]LogBlueprintUserMessages: [spiritOrbOG_188] 685.0
+[2017.02.09-11.41.00:754][149]LogBlueprintUserMessages: [spiritOrbOG_188] 685.0
+[2017.02.09-11.41.00:866][156]LogBlueprintUserMessages: [spiritOrbOG_188] 670.0
+[2017.02.09-11.41.00:963][162]LogBlueprintUserMessages: [spiritOrbOG_188] 655.0
+[2017.02.09-11.41.01:059][168]LogBlueprintUserMessages: [spiritOrbOG_188] 640.0
+[2017.02.09-11.41.01:157][174]LogBlueprintUserMessages: [spiritOrbOG_188] 625.0
+[2017.02.09-11.41.01:253][180]LogBlueprintUserMessages: [corruptionCube6] 625.0
+[2017.02.09-11.41.01:253][180]LogBlueprintUserMessages: [spiritOrbOG_188] 610.0
+[2017.02.09-11.41.01:269][181]LogBlueprintUserMessages: [spiritOrbOG_188] -625.0
+[2017.02.09-11.41.01:366][187]LogBlueprintUserMessages: [spiritOrbOG_188] -610.0
+[2017.02.09-11.41.01:463][193]LogBlueprintUserMessages: [spiritOrbOG_188] -595.0
+[2017.02.09-11.41.01:559][199]LogBlueprintUserMessages: [spiritOrbOG_188] -580.0
+[2017.02.09-11.41.01:657][205]LogBlueprintUserMessages: [spiritOrbOG_188] -565.0
+[2017.02.09-11.41.01:753][211]LogBlueprintUserMessages: [spiritOrbOG_188] -550.0
+[2017.02.09-11.41.01:866][218]LogBlueprintUserMessages: [spiritOrbOG_188] -535.0
+[2017.02.09-11.41.01:963][224]LogBlueprintUserMessages: [spiritOrbOG_188] -520.0
+[2017.02.09-11.41.02:059][230]LogBlueprintUserMessages: [spiritOrbOG_188] -505.0
+[2017.02.09-11.41.02:157][236]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.02:253][242]LogBlueprintUserMessages: [spiritOrbOG_188] 685.0
+[2017.02.09-11.41.02:366][249]LogBlueprintUserMessages: [spiritOrbOG_188] 670.0
+[2017.02.09-11.41.02:463][255]LogBlueprintUserMessages: [spiritOrbOG_188] 655.0
+[2017.02.09-11.41.02:560][261]LogBlueprintUserMessages: [spiritOrbOG_188] 640.0
+[2017.02.09-11.41.02:657][267]LogBlueprintUserMessages: [spiritOrbOG_188] 625.0
+[2017.02.09-11.41.02:753][273]LogBlueprintUserMessages: [spiritOrbOG_188] 610.0
+[2017.02.09-11.41.02:866][280]LogBlueprintUserMessages: [spiritOrbOG_188] 595.0
+[2017.02.09-11.41.02:947][285]LogBlueprintUserMessages: [corruptionCube2] 595.0
+[2017.02.09-11.41.02:963][286]LogBlueprintUserMessages: [spiritOrbOG_188] 595.0
+[2017.02.09-11.41.02:963][286]LogBlueprintUserMessages: [spiritOrbOG_188] 580.0
+[2017.02.09-11.41.03:060][292]LogBlueprintUserMessages: [spiritOrbOG_188] 565.0
+[2017.02.09-11.41.03:108][295]LogBlueprintUserMessages: [corruptionCube18] 565.0
+[2017.02.09-11.41.03:124][296]LogBlueprintUserMessages: [spiritOrbOG_188] -565.0
+[2017.02.09-11.41.03:156][298]LogBlueprintUserMessages: [spiritOrbOG_188] -550.0
+[2017.02.09-11.41.03:253][304]LogBlueprintUserMessages: [spiritOrbOG_188] -535.0
+[2017.02.09-11.41.03:366][311]LogBlueprintUserMessages: [spiritOrbOG_188] -520.0
+[2017.02.09-11.41.03:463][317]LogBlueprintUserMessages: [spiritOrbOG_188] -505.0
+[2017.02.09-11.41.03:560][323]LogBlueprintUserMessages: [spiritOrbOG_188] -490.0
+[2017.02.09-11.41.03:657][329]LogBlueprintUserMessages: [spiritOrbOG_188] -475.0
+[2017.02.09-11.41.03:753][335]LogBlueprintUserMessages: [spiritOrbOG_188] -460.0
+[2017.02.09-11.41.03:866][342]LogBlueprintUserMessages: [spiritOrbOG_188] -445.0
+[2017.02.09-11.41.03:963][348]LogBlueprintUserMessages: [spiritOrbOG_188] -430.0
+[2017.02.09-11.41.04:060][354]LogBlueprintUserMessages: [spiritOrbOG_188] 680.632019
+[2017.02.09-11.41.04:157][360]LogBlueprintUserMessages: [spiritOrbOG_188] 665.632019
+[2017.02.09-11.41.04:253][366]LogBlueprintUserMessages: [spiritOrbOG_188] 650.632019
+[2017.02.09-11.41.04:366][373]LogBlueprintUserMessages: [spiritOrbOG_188] 635.632019
+[2017.02.09-11.41.04:463][379]LogBlueprintUserMessages: [spiritOrbOG_188] 620.632019
+[2017.02.09-11.41.04:560][385]LogBlueprintUserMessages: [spiritOrbOG_188] 605.632019
+[2017.02.09-11.41.04:657][391]LogBlueprintUserMessages: [spiritOrbOG_188] 590.632019
+[2017.02.09-11.41.04:754][397]LogBlueprintUserMessages: [spiritOrbOG_188] 575.632019
+[2017.02.09-11.41.04:866][404]LogBlueprintUserMessages: [spiritOrbOG_188] 560.632019
+[2017.02.09-11.41.04:963][410]LogBlueprintUserMessages: [spiritOrbOG_188] 545.632019
+[2017.02.09-11.41.05:060][416]LogBlueprintUserMessages: [spiritOrbOG_188] 530.632019
+[2017.02.09-11.41.05:107][419]LogNet: Browse: /Temp/Autosaves/Game/ThirdPersonBP/Maps/UEDPCThirdPersonExampleMap
+[2017.02.09-11.41.05:108][419]LogLoad: LoadMap: /Temp/Autosaves/Game/ThirdPersonBP/Maps/UEDPCThirdPersonExampleMap
+[2017.02.09-11.41.05:170][419]LogMemory: Platform Memory Stats for Windows
+[2017.02.09-11.41.05:170][419]LogMemory: Process Physical Memory: 694.03 MB used, 767.64 MB peak
+[2017.02.09-11.41.05:170][419]LogMemory: Process Virtual Memory: 976.66 MB used, 1090.20 MB peak
+[2017.02.09-11.41.05:170][419]LogMemory: Physical Memory: 5973.41 MB used, 8145.96 MB total
+[2017.02.09-11.41.05:170][419]LogMemory: Virtual Memory: 1644.77 MB used, 134217728.00 MB total
+[2017.02.09-11.41.05:170][419]LogMemory: 
+[2017.02.09-11.41.05:170][419]Allocator Stats for TBB: (not implemented)
+[2017.02.09-11.41.05:878][419]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.02.09-11.41.05:881][419]LogWorld: Game class is 'ThirdPersonGameMode_C'
+[2017.02.09-11.41.05:924][419]LogWorld: Bringing World /Temp/Autosaves/Game/ThirdPersonBP/Maps/UEDPCThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2017.02.09-06.41.05
+[2017.02.09-11.41.05:926][419]LogWorld: Bringing up level for play took: 0.044639
+[2017.02.09-11.41.05:931][419]LogLoad: Took 0.823054 seconds to LoadMap(/Temp/Autosaves/Game/ThirdPersonBP/Maps/UEDPCThirdPersonExampleMap)
+[2017.02.09-11.41.05:935][420]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.05:935][420]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.05:935][420]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.05:935][420]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.06:046][424]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.06:143][430]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.06:240][436]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.06:337][442]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.06:450][449]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.06:546][455]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.06:644][461]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.06:740][467]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.06:837][473]LogBlueprintUserMessages: [spiritOrbOG_188] 676.927612
+[2017.02.09-11.41.06:950][480]LogBlueprintUserMessages: [spiritOrbOG_188] 661.927612
+[2017.02.09-11.41.07:047][486]LogBlueprintUserMessages: [spiritOrbOG_188] 646.927612
+[2017.02.09-11.41.07:143][492]LogBlueprintUserMessages: [spiritOrbOG_188] 631.927612
+[2017.02.09-11.41.07:240][498]LogBlueprintUserMessages: [spiritOrbOG_188] 616.927612
+[2017.02.09-11.41.07:337][504]LogBlueprintUserMessages: [spiritOrbOG_188] 601.927612
+[2017.02.09-11.41.07:402][508]LogBlueprintUserMessages: [corruptionCube6] 601.927612
+[2017.02.09-11.41.07:418][509]LogBlueprintUserMessages: [spiritOrbOG_188] -601.927612
+[2017.02.09-11.41.07:450][511]LogBlueprintUserMessages: [spiritOrbOG_188] -586.927612
+[2017.02.09-11.41.07:547][517]LogBlueprintUserMessages: [spiritOrbOG_188] -571.927612
+[2017.02.09-11.41.07:646][523]LogBlueprintUserMessages: [spiritOrbOG_188] -556.927612
+[2017.02.09-11.41.07:741][529]LogBlueprintUserMessages: [spiritOrbOG_188] -541.927612
+[2017.02.09-11.41.07:838][535]LogBlueprintUserMessages: [spiritOrbOG_188] -526.927612
+[2017.02.09-11.41.07:951][542]LogBlueprintUserMessages: [spiritOrbOG_188] -511.927612
+[2017.02.09-11.41.08:048][548]LogBlueprintUserMessages: [spiritOrbOG_188] -496.927612
+[2017.02.09-11.41.08:144][554]LogBlueprintUserMessages: [spiritOrbOG_188] 685.0
+[2017.02.09-11.41.08:241][560]LogBlueprintUserMessages: [spiritOrbOG_188] 684.983032
+[2017.02.09-11.41.08:337][566]LogBlueprintUserMessages: [spiritOrbOG_188] 669.983032
+[2017.02.09-11.41.08:451][573]LogBlueprintUserMessages: [spiritOrbOG_188] 654.983032
+[2017.02.09-11.41.08:547][579]LogBlueprintUserMessages: [spiritOrbOG_188] 639.983032
+[2017.02.09-11.41.08:644][585]LogBlueprintUserMessages: [spiritOrbOG_188] 624.983032
+[2017.02.09-11.41.08:741][591]LogBlueprintUserMessages: [spiritOrbOG_188] 609.983032
+[2017.02.09-11.41.08:773][593]LogBlueprintUserMessages: [corruptionCube18] 609.983032
+[2017.02.09-11.41.08:789][594]LogBlueprintUserMessages: [spiritOrbOG_188] -609.983032
+[2017.02.09-11.41.08:839][597]LogBlueprintUserMessages: [spiritOrbOG_188] -594.983032
+[2017.02.09-11.41.08:950][604]LogBlueprintUserMessages: [spiritOrbOG_188] -579.983032
+[2017.02.09-11.41.09:047][610]LogBlueprintUserMessages: [spiritOrbOG_188] -564.983032
+[2017.02.09-11.41.09:144][616]LogBlueprintUserMessages: [spiritOrbOG_188] -549.983032
+[2017.02.09-11.41.09:241][622]LogBlueprintUserMessages: [spiritOrbOG_188] -534.983032
+[2017.02.09-11.41.09:338][628]LogBlueprintUserMessages: [spiritOrbOG_188] -519.983032
+[2017.02.09-11.41.09:450][635]LogBlueprintUserMessages: [spiritOrbOG_188] -504.983032
+[2017.02.09-11.41.09:547][641]LogBlueprintUserMessages: [spiritOrbOG_188] 685.0
+[2017.02.09-11.41.09:644][647]LogBlueprintUserMessages: [spiritOrbOG_188] 670.0
+[2017.02.09-11.41.09:741][653]LogBlueprintUserMessages: [spiritOrbOG_188] 655.0
+[2017.02.09-11.41.09:838][659]LogBlueprintUserMessages: [spiritOrbOG_188] 640.0
+[2017.02.09-11.41.09:950][666]LogBlueprintUserMessages: [spiritOrbOG_188] 625.0
+[2017.02.09-11.41.10:047][672]LogBlueprintUserMessages: [spiritOrbOG_188] 610.0
+[2017.02.09-11.41.10:144][678]LogBlueprintUserMessages: [spiritOrbOG_188] 595.0
+[2017.02.09-11.41.10:241][684]LogBlueprintUserMessages: [spiritOrbOG_188] 580.0
+[2017.02.09-11.41.10:338][690]LogBlueprintUserMessages: [spiritOrbOG_188] 565.0
+[2017.02.09-11.41.10:450][697]LogBlueprintUserMessages: [spiritOrbOG_188] 550.0
+[2017.02.09-11.41.10:531][702]LogBlueprintUserMessages: [corruptionCube48] 550.0
+[2017.02.09-11.41.10:548][703]LogBlueprintUserMessages: [spiritOrbOG_188] -550.0
+[2017.02.09-11.41.10:548][703]LogBlueprintUserMessages: [spiritOrbOG_188] -535.0
+[2017.02.09-11.41.10:645][709]LogBlueprintUserMessages: [spiritOrbOG_188] -520.0
+[2017.02.09-11.41.10:741][715]LogBlueprintUserMessages: [spiritOrbOG_188] -505.0
+[2017.02.09-11.41.10:838][721]LogBlueprintUserMessages: [spiritOrbOG_188] -490.0
+[2017.02.09-11.41.10:935][727]LogBlueprintUserMessages: [spiritOrbOG_188] -475.0
+[2017.02.09-11.41.11:049][734]LogBlueprintUserMessages: [spiritOrbOG_188] -460.0
+[2017.02.09-11.41.11:145][740]LogBlueprintUserMessages: [spiritOrbOG_188] -445.0
+[2017.02.09-11.41.11:242][746]LogBlueprintUserMessages: [spiritOrbOG_188] -430.0
+[2017.02.09-11.41.11:339][752]LogBlueprintUserMessages: [spiritOrbOG_188] -415.0
+[2017.02.09-11.41.11:436][758]LogBlueprintUserMessages: [spiritOrbOG_188] -400.0
+[2017.02.09-11.41.11:549][765]LogBlueprintUserMessages: [spiritOrbOG_188] -385.0
+[2017.02.09-11.41.11:646][771]LogBlueprintUserMessages: [spiritOrbOG_188] -370.0
+[2017.02.09-11.41.11:743][777]LogBlueprintUserMessages: [spiritOrbOG_188] -355.0
+[2017.02.09-11.41.11:839][783]LogBlueprintUserMessages: [spiritOrbOG_188] -340.0
+[2017.02.09-11.41.11:937][789]LogBlueprintUserMessages: [spiritOrbOG_188] -325.0
+[2017.02.09-11.41.12:049][796]LogBlueprintUserMessages: [spiritOrbOG_188] -310.0
+[2017.02.09-11.41.12:146][802]LogBlueprintUserMessages: [spiritOrbOG_188] -295.0
+[2017.02.09-11.41.12:243][808]LogBlueprintUserMessages: [spiritOrbOG_188] -280.0
+[2017.02.09-11.41.12:339][814]LogBlueprintUserMessages: [spiritOrbOG_188] -265.0
+[2017.02.09-11.41.12:436][820]LogBlueprintUserMessages: [spiritOrbOG_188] -250.0
+[2017.02.09-11.41.12:549][827]LogBlueprintUserMessages: [spiritOrbOG_188] -235.0
+[2017.02.09-11.41.12:646][833]LogBlueprintUserMessages: [spiritOrbOG_188] -220.0
+[2017.02.09-11.41.12:743][839]LogBlueprintUserMessages: [spiritOrbOG_188] -205.0
+[2017.02.09-11.41.12:840][845]LogBlueprintUserMessages: [spiritOrbOG_188] -190.0
+[2017.02.09-11.41.12:936][851]LogBlueprintUserMessages: [spiritOrbOG_188] -175.0
+[2017.02.09-11.41.13:049][858]LogBlueprintUserMessages: [spiritOrbOG_188] -160.0
+[2017.02.09-11.41.13:146][864]LogBlueprintUserMessages: [spiritOrbOG_188] -145.0
+[2017.02.09-11.41.13:242][870]LogBlueprintUserMessages: [spiritOrbOG_188] -130.0
+[2017.02.09-11.41.13:339][876]LogBlueprintUserMessages: [spiritOrbOG_188] -115.0
+[2017.02.09-11.41.13:436][882]LogBlueprintUserMessages: [spiritOrbOG_188] 29.298409
+[2017.02.09-11.41.13:549][889]LogBlueprintUserMessages: [spiritOrbOG_188] 14.298409
+[2017.02.09-11.41.13:647][895]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.13:743][901]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.13:840][907]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.13:936][913]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.14:049][920]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.14:145][926]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.14:243][932]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.14:339][938]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.14:436][944]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.14:549][951]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.14:646][957]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.14:743][963]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.14:839][969]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.14:936][975]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.15:049][982]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.15:146][988]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.15:243][994]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.15:339][  0]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.15:437][  6]LogBlueprintUserMessages: [superWall6] 0.0
+[2017.02.09-11.41.15:437][  6]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.15:453][  7]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.15:550][ 13]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.15:646][ 19]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.15:743][ 25]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.15:840][ 31]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.15:936][ 37]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.16:050][ 44]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.16:146][ 50]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.16:243][ 56]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.16:340][ 62]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.16:436][ 68]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.16:552][ 75]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.16:646][ 81]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.16:743][ 87]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.16:840][ 93]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.16:937][ 99]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.17:050][106]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.17:147][112]LogBlueprintUserMessages: [spiritOrbOG_188] 645.286133
+[2017.02.09-11.41.17:243][118]LogBlueprintUserMessages: [spiritOrbOG_188] 630.286133
+[2017.02.09-11.41.17:341][124]LogBlueprintUserMessages: [spiritOrbOG_188] 615.286133
+[2017.02.09-11.41.17:437][130]LogBlueprintUserMessages: [spiritOrbOG_188] 600.286133
+[2017.02.09-11.41.17:550][137]LogBlueprintUserMessages: [spiritOrbOG_188] 585.286133
+[2017.02.09-11.41.17:647][143]LogBlueprintUserMessages: [spiritOrbOG_188] 570.286133
+[2017.02.09-11.41.17:743][149]LogBlueprintUserMessages: [spiritOrbOG_188] 555.286133
+[2017.02.09-11.41.17:841][155]LogBlueprintUserMessages: [spiritOrbOG_188] 540.286133
+[2017.02.09-11.41.17:937][161]LogBlueprintUserMessages: [spiritOrbOG_188] 525.286133
+[2017.02.09-11.41.18:050][168]LogBlueprintUserMessages: [spiritOrbOG_188] 510.286133
+[2017.02.09-11.41.18:147][174]LogBlueprintUserMessages: [spiritOrbOG_188] 495.286133
+[2017.02.09-11.41.18:243][180]LogBlueprintUserMessages: [corruptionCube10] 495.286133
+[2017.02.09-11.41.18:244][180]LogBlueprintUserMessages: [spiritOrbOG_188] 480.286133
+[2017.02.09-11.41.18:260][181]LogBlueprintUserMessages: [spiritOrbOG_188] -495.286133
+[2017.02.09-11.41.18:340][186]LogBlueprintUserMessages: [spiritOrbOG_188] -480.286133
+[2017.02.09-11.41.18:437][192]LogBlueprintUserMessages: [spiritOrbOG_188] -465.286133
+[2017.02.09-11.41.18:550][199]LogBlueprintUserMessages: [spiritOrbOG_188] -450.286133
+[2017.02.09-11.41.18:647][205]LogBlueprintUserMessages: [spiritOrbOG_188] -435.286133
+[2017.02.09-11.41.18:743][211]LogBlueprintUserMessages: [spiritOrbOG_188] -420.286133
+[2017.02.09-11.41.18:840][217]LogBlueprintUserMessages: [spiritOrbOG_188] -405.286133
+[2017.02.09-11.41.18:937][223]LogBlueprintUserMessages: [spiritOrbOG_188] -390.286133
+[2017.02.09-11.41.19:050][230]LogBlueprintUserMessages: [spiritOrbOG_188] -375.286133
+[2017.02.09-11.41.19:147][236]LogBlueprintUserMessages: [spiritOrbOG_188] -360.286133
+[2017.02.09-11.41.19:244][242]LogBlueprintUserMessages: [spiritOrbOG_188] -345.286133
+[2017.02.09-11.41.19:340][248]LogBlueprintUserMessages: [spiritOrbOG_188] -330.286133
+[2017.02.09-11.41.19:437][254]LogBlueprintUserMessages: [spiritOrbOG_188] 662.549011
+[2017.02.09-11.41.19:550][261]LogBlueprintUserMessages: [spiritOrbOG_188] 647.549011
+[2017.02.09-11.41.19:647][267]LogBlueprintUserMessages: [spiritOrbOG_188] 632.549011
+[2017.02.09-11.41.19:744][273]LogBlueprintUserMessages: [spiritOrbOG_188] 617.549011
+[2017.02.09-11.41.19:841][279]LogBlueprintUserMessages: [spiritOrbOG_188] 602.549011
+[2017.02.09-11.41.19:938][285]LogBlueprintUserMessages: [spiritOrbOG_188] 587.549011
+[2017.02.09-11.41.20:052][292]LogBlueprintUserMessages: [spiritOrbOG_188] 572.549011
+[2017.02.09-11.41.20:131][297]LogBlueprintUserMessages: [corruptionCube12] 572.549011
+[2017.02.09-11.41.20:148][298]LogBlueprintUserMessages: [spiritOrbOG_188] -572.549011
+[2017.02.09-11.41.20:148][298]LogBlueprintUserMessages: [spiritOrbOG_188] -557.549011
+[2017.02.09-11.41.20:244][304]LogBlueprintUserMessages: [spiritOrbOG_188] -542.549011
+[2017.02.09-11.41.20:342][310]LogBlueprintUserMessages: [spiritOrbOG_188] -527.549011
+[2017.02.09-11.41.20:438][316]LogBlueprintUserMessages: [spiritOrbOG_188] -512.549011
+[2017.02.09-11.41.20:551][323]LogBlueprintUserMessages: [spiritOrbOG_188] -497.549011
+[2017.02.09-11.41.20:648][329]LogBlueprintUserMessages: [spiritOrbOG_188] -482.549011
+[2017.02.09-11.41.20:744][335]LogBlueprintUserMessages: [spiritOrbOG_188] -467.549011
+[2017.02.09-11.41.20:841][341]LogBlueprintUserMessages: [spiritOrbOG_188] -452.549011
+[2017.02.09-11.41.20:938][347]LogBlueprintUserMessages: [spiritOrbOG_188] -437.549011
+[2017.02.09-11.41.21:051][354]LogBlueprintUserMessages: [spiritOrbOG_188] -422.549011
+[2017.02.09-11.41.21:148][360]LogBlueprintUserMessages: [spiritOrbOG_188] 668.696167
+[2017.02.09-11.41.21:244][366]LogBlueprintUserMessages: [spiritOrbOG_188] 653.696167
+[2017.02.09-11.41.21:342][372]LogBlueprintUserMessages: [spiritOrbOG_188] 638.696167
+[2017.02.09-11.41.21:438][378]LogBlueprintUserMessages: [spiritOrbOG_188] 623.696167
+[2017.02.09-11.41.21:551][385]LogBlueprintUserMessages: [spiritOrbOG_188] 608.696167
+[2017.02.09-11.41.21:648][391]LogBlueprintUserMessages: [spiritOrbOG_188] 593.696167
+[2017.02.09-11.41.21:744][397]LogBlueprintUserMessages: [spiritOrbOG_188] 578.696167
+[2017.02.09-11.41.21:842][403]LogBlueprintUserMessages: [spiritOrbOG_188] 563.696167
+[2017.02.09-11.41.21:938][409]LogBlueprintUserMessages: [spiritOrbOG_188] 548.696167
+[2017.02.09-11.41.22:051][416]LogBlueprintUserMessages: [spiritOrbOG_188] 533.696167
+[2017.02.09-11.41.22:084][418]LogBlueprintUserMessages: [corruptionCube22] 533.696167
+[2017.02.09-11.41.22:084][418]LogBlueprintUserMessages: [corruptionCube24] 533.696167
+[2017.02.09-11.41.22:099][419]LogBlueprintUserMessages: [spiritOrbOG_188] -533.696167
+[2017.02.09-11.41.22:099][419]LogBlueprintUserMessages: [spiritOrbOG_188] -533.696167
+[2017.02.09-11.41.22:148][422]LogBlueprintUserMessages: [spiritOrbOG_188] -518.696167
+[2017.02.09-11.41.22:245][428]LogBlueprintUserMessages: [spiritOrbOG_188] -503.696167
+[2017.02.09-11.41.22:342][434]LogBlueprintUserMessages: [spiritOrbOG_188] -488.696167
+[2017.02.09-11.41.22:438][440]LogBlueprintUserMessages: [spiritOrbOG_188] -473.696167
+[2017.02.09-11.41.22:536][446]LogBlueprintUserMessages: [spiritOrbOG_188] -458.696167
+[2017.02.09-11.41.22:648][453]LogBlueprintUserMessages: [spiritOrbOG_188] -443.696167
+[2017.02.09-11.41.22:745][459]LogBlueprintUserMessages: [spiritOrbOG_188] -428.696167
+[2017.02.09-11.41.22:843][465]LogBlueprintUserMessages: [spiritOrbOG_188] -413.696167
+[2017.02.09-11.41.22:939][471]LogBlueprintUserMessages: [spiritOrbOG_188] -398.696167
+[2017.02.09-11.41.23:036][477]LogBlueprintUserMessages: [spiritOrbOG_188] -383.696167
+[2017.02.09-11.41.23:148][484]LogBlueprintUserMessages: [spiritOrbOG_188] -368.696167
+[2017.02.09-11.41.23:245][490]LogBlueprintUserMessages: [spiritOrbOG_188] 682.213684
+[2017.02.09-11.41.23:343][496]LogBlueprintUserMessages: [spiritOrbOG_188] 667.213684
+[2017.02.09-11.41.23:439][502]LogBlueprintUserMessages: [spiritOrbOG_188] 652.213684
+[2017.02.09-11.41.23:536][508]LogBlueprintUserMessages: [spiritOrbOG_188] 637.213684
+[2017.02.09-11.41.23:648][515]LogBlueprintUserMessages: [spiritOrbOG_188] 622.213684
+[2017.02.09-11.41.23:746][521]LogBlueprintUserMessages: [spiritOrbOG_188] 607.213684
+[2017.02.09-11.41.23:843][527]LogBlueprintUserMessages: [spiritOrbOG_188] 592.213684
+[2017.02.09-11.41.23:939][533]LogBlueprintUserMessages: [spiritOrbOG_188] 577.213684
+[2017.02.09-11.41.24:036][539]LogBlueprintUserMessages: [spiritOrbOG_188] 562.213684
+[2017.02.09-11.41.24:084][542]LogBlueprintUserMessages: [corruptionCube61] 562.213684
+[2017.02.09-11.41.24:100][543]LogBlueprintUserMessages: [spiritOrbOG_188] -562.213684
+[2017.02.09-11.41.24:149][546]LogBlueprintUserMessages: [spiritOrbOG_188] -547.213684
+[2017.02.09-11.41.24:245][552]LogBlueprintUserMessages: [spiritOrbOG_188] -532.213684
+[2017.02.09-11.41.24:342][558]LogBlueprintUserMessages: [spiritOrbOG_188] -517.213684
+[2017.02.09-11.41.24:439][564]LogBlueprintUserMessages: [spiritOrbOG_188] -502.213684
+[2017.02.09-11.41.24:536][570]LogBlueprintUserMessages: [spiritOrbOG_188] -487.213684
+[2017.02.09-11.41.24:649][577]LogBlueprintUserMessages: [spiritOrbOG_188] -472.213684
+[2017.02.09-11.41.24:745][583]LogBlueprintUserMessages: [spiritOrbOG_188] -457.213684
+[2017.02.09-11.41.24:842][589]LogBlueprintUserMessages: [spiritOrbOG_188] -442.213684
+[2017.02.09-11.41.24:939][595]LogBlueprintUserMessages: [spiritOrbOG_188] -427.213684
+[2017.02.09-11.41.25:036][601]LogBlueprintUserMessages: [spiritOrbOG_188] -412.213684
+[2017.02.09-11.41.25:149][608]LogBlueprintUserMessages: [spiritOrbOG_188] -397.213684
+[2017.02.09-11.41.25:246][614]LogBlueprintUserMessages: [spiritOrbOG_188] -382.213684
+[2017.02.09-11.41.25:343][620]LogBlueprintUserMessages: [spiritOrbOG_188] -367.213684
+[2017.02.09-11.41.25:439][626]LogBlueprintUserMessages: [spiritOrbOG_188] -352.213684
+[2017.02.09-11.41.25:536][632]LogBlueprintUserMessages: [spiritOrbOG_188] -337.213684
+[2017.02.09-11.41.25:649][639]LogBlueprintUserMessages: [spiritOrbOG_188] -322.213684
+[2017.02.09-11.41.25:745][645]LogBlueprintUserMessages: [spiritOrbOG_188] -307.213684
+[2017.02.09-11.41.25:843][651]LogBlueprintUserMessages: [spiritOrbOG_188] -292.213684
+[2017.02.09-11.41.25:939][657]LogBlueprintUserMessages: [spiritOrbOG_188] -277.213684
+[2017.02.09-11.41.26:036][663]LogBlueprintUserMessages: [spiritOrbOG_188] -262.213684
+[2017.02.09-11.41.26:149][670]LogBlueprintUserMessages: [spiritOrbOG_188] -247.213684
+[2017.02.09-11.41.26:246][676]LogBlueprintUserMessages: [spiritOrbOG_188] -232.213684
+[2017.02.09-11.41.26:343][682]LogBlueprintUserMessages: [spiritOrbOG_188] -217.213684
+[2017.02.09-11.41.26:440][688]LogBlueprintUserMessages: [spiritOrbOG_188] -202.213684
+[2017.02.09-11.41.26:537][694]LogBlueprintUserMessages: [spiritOrbOG_188] -187.213684
+[2017.02.09-11.41.26:651][701]LogBlueprintUserMessages: [spiritOrbOG_188] -172.213684
+[2017.02.09-11.41.26:746][707]LogBlueprintUserMessages: [spiritOrbOG_188] -157.213684
+[2017.02.09-11.41.26:844][713]LogBlueprintUserMessages: [spiritOrbOG_188] -142.213684
+[2017.02.09-11.41.26:940][719]LogBlueprintUserMessages: [spiritOrbOG_188] -127.213684
+[2017.02.09-11.41.27:037][725]LogBlueprintUserMessages: [spiritOrbOG_188] -112.213684
+[2017.02.09-11.41.27:150][732]LogBlueprintUserMessages: [spiritOrbOG_188] -97.213684
+[2017.02.09-11.41.27:246][738]LogBlueprintUserMessages: [spiritOrbOG_188] -82.213684
+[2017.02.09-11.41.27:343][744]LogBlueprintUserMessages: [spiritOrbOG_188] -67.213684
+[2017.02.09-11.41.27:440][750]LogBlueprintUserMessages: [spiritOrbOG_188] -52.213684
+[2017.02.09-11.41.27:537][756]LogBlueprintUserMessages: [spiritOrbOG_188] -37.213684
+[2017.02.09-11.41.27:650][763]LogBlueprintUserMessages: [spiritOrbOG_188] -22.213684
+[2017.02.09-11.41.27:747][769]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.27:844][775]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.27:940][781]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.28:037][787]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.28:150][794]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.28:246][800]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.28:343][806]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.28:440][812]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.28:537][818]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.28:649][825]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.28:747][831]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.28:843][837]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.28:940][843]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.29:037][849]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.29:150][856]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.29:247][862]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.29:343][868]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.29:440][874]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.29:537][880]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.29:650][887]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.29:746][893]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.29:843][899]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.29:940][905]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.30:037][911]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.30:150][918]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.30:247][924]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.30:343][930]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.30:440][936]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.30:537][942]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.30:650][949]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.30:747][955]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.30:843][961]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.30:940][967]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.31:037][973]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.31:150][980]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.31:247][986]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.31:343][992]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.31:440][998]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.31:537][  4]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.31:650][ 11]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.31:746][ 17]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.31:844][ 23]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.31:940][ 29]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.32:037][ 35]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.32:150][ 42]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.32:246][ 48]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.32:343][ 54]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.32:440][ 60]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.32:537][ 66]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.32:650][ 73]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.32:747][ 79]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.32:843][ 85]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.32:940][ 91]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.33:037][ 97]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.33:150][104]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.33:247][110]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.33:343][116]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.33:440][122]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.33:536][128]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.33:650][135]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.33:747][141]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.33:843][147]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.33:940][153]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.34:036][159]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.34:149][166]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.34:246][172]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.34:343][178]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.34:440][184]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.34:537][190]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.34:651][197]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.34:747][203]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.34:844][209]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.34:940][215]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.35:037][221]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.35:150][228]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.35:247][234]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.35:344][240]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.35:440][246]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.35:537][252]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.35:650][259]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.35:748][265]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.35:843][271]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.35:940][277]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.36:037][283]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.36:151][290]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.36:247][296]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.36:343][302]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.36:440][308]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.36:537][314]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.36:650][321]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.36:747][327]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.36:844][333]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.36:940][339]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.37:037][345]LogBlueprintUserMessages: [spiritOrbOG_188] 518.504089
+[2017.02.09-11.41.37:150][352]LogBlueprintUserMessages: [spiritOrbOG_188] 503.504089
+[2017.02.09-11.41.37:246][358]LogBlueprintUserMessages: [spiritOrbOG_188] 488.504089
+[2017.02.09-11.41.37:343][364]LogBlueprintUserMessages: [spiritOrbOG_188] 473.504089
+[2017.02.09-11.41.37:440][370]LogBlueprintUserMessages: [spiritOrbOG_188] 458.504089
+[2017.02.09-11.41.37:537][376]LogBlueprintUserMessages: [spiritOrbOG_188] 443.504089
+[2017.02.09-11.41.37:650][383]LogBlueprintUserMessages: [spiritOrbOG_188] 428.504089
+[2017.02.09-11.41.37:748][389]LogBlueprintUserMessages: [spiritOrbOG_188] 413.504089
+[2017.02.09-11.41.37:843][395]LogBlueprintUserMessages: [spiritOrbOG_188] 398.504089
+[2017.02.09-11.41.37:941][401]LogBlueprintUserMessages: [spiritOrbOG_188] 383.504089
+[2017.02.09-11.41.38:038][407]LogBlueprintUserMessages: [spiritOrbOG_188] 368.504089
+[2017.02.09-11.41.38:151][414]LogBlueprintUserMessages: [spiritOrbOG_188] 353.504089
+[2017.02.09-11.41.38:247][420]LogBlueprintUserMessages: [spiritOrbOG_188] 338.504089
+[2017.02.09-11.41.38:344][426]LogBlueprintUserMessages: [spiritOrbOG_188] 323.504089
+[2017.02.09-11.41.38:441][432]LogBlueprintUserMessages: [spiritOrbOG_188] 308.504089
+[2017.02.09-11.41.38:538][438]LogBlueprintUserMessages: [spiritOrbOG_188] 293.504089
+[2017.02.09-11.41.38:651][445]LogBlueprintUserMessages: [spiritOrbOG_188] 278.504089
+[2017.02.09-11.41.38:748][451]LogBlueprintUserMessages: [spiritOrbOG_188] 263.504089
+[2017.02.09-11.41.38:844][457]LogBlueprintUserMessages: [spiritOrbOG_188] 248.504089
+[2017.02.09-11.41.38:892][460]LogBlueprintUserMessages: [superWall6] 248.504089
+[2017.02.09-11.41.38:941][463]LogBlueprintUserMessages: [spiritOrbOG_188] 116.015396
+[2017.02.09-11.41.38:989][466]LogBlueprintUserMessages: [spiritOrbOG_188] 248.504089
+[2017.02.09-11.41.39:038][469]LogBlueprintUserMessages: [spiritOrbOG_188] 233.504089
+[2017.02.09-11.41.39:151][476]LogBlueprintUserMessages: [spiritOrbOG_188] 218.504089
+[2017.02.09-11.41.39:248][482]LogBlueprintUserMessages: [spiritOrbOG_188] 203.504089
+[2017.02.09-11.41.39:344][488]LogBlueprintUserMessages: [spiritOrbOG_188] 188.504089
+[2017.02.09-11.41.39:441][494]LogBlueprintUserMessages: [spiritOrbOG_188] 173.504089
+[2017.02.09-11.41.39:538][500]LogBlueprintUserMessages: [spiritOrbOG_188] 158.504089
+[2017.02.09-11.41.39:651][507]LogBlueprintUserMessages: [spiritOrbOG_188] 143.504089
+[2017.02.09-11.41.39:747][513]LogBlueprintUserMessages: [spiritOrbOG_188] 128.504089
+[2017.02.09-11.41.39:844][519]LogBlueprintUserMessages: [spiritOrbOG_188] 113.504089
+[2017.02.09-11.41.39:941][525]LogBlueprintUserMessages: [spiritOrbOG_188] 98.504089
+[2017.02.09-11.41.40:037][531]LogBlueprintUserMessages: [spiritOrbOG_188] 83.504089
+[2017.02.09-11.41.40:069][533]LogNet: Browse: /Temp/Autosaves/Game/ThirdPersonBP/Maps/UEDPCThirdPersonExampleMap
+[2017.02.09-11.41.40:069][533]LogLoad: LoadMap: /Temp/Autosaves/Game/ThirdPersonBP/Maps/UEDPCThirdPersonExampleMap
+[2017.02.09-11.41.40:135][533]LogMemory: Platform Memory Stats for Windows
+[2017.02.09-11.41.40:135][533]LogMemory: Process Physical Memory: 702.30 MB used, 767.64 MB peak
+[2017.02.09-11.41.40:135][533]LogMemory: Process Virtual Memory: 988.58 MB used, 1090.20 MB peak
+[2017.02.09-11.41.40:135][533]LogMemory: Physical Memory: 5966.54 MB used, 8145.96 MB total
+[2017.02.09-11.41.40:135][533]LogMemory: Virtual Memory: 1660.89 MB used, 134217728.00 MB total
+[2017.02.09-11.41.40:135][533]LogMemory: 
+[2017.02.09-11.41.40:135][533]Allocator Stats for TBB: (not implemented)
+[2017.02.09-11.41.40:889][533]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.02.09-11.41.40:895][533]LogWorld: Game class is 'ThirdPersonGameMode_C'
+[2017.02.09-11.41.40:940][533]LogWorld: Bringing World /Temp/Autosaves/Game/ThirdPersonBP/Maps/UEDPCThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2017.02.09-06.41.40
+[2017.02.09-11.41.40:942][533]LogWorld: Bringing up level for play took: 0.044662
+[2017.02.09-11.41.40:946][533]LogPlayerManagement:Error: Failed to Create Player: Maximum number of players (4) already created.  Unable to create more.
+[2017.02.09-11.41.40:946][533]LogLoad: Took 0.877042 seconds to LoadMap(/Temp/Autosaves/Game/ThirdPersonBP/Maps/UEDPCThirdPersonExampleMap)
+[2017.02.09-11.41.40:950][534]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.40:950][534]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.40:950][534]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.40:950][534]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.41:061][538]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.41:158][544]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.41:255][550]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.41:351][556]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.41:464][563]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.41:561][569]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.41:658][575]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.41:755][581]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.41:851][587]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.41:964][594]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.42:061][600]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.42:158][606]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.42:256][612]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.42:351][618]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.42:464][625]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.42:561][631]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.42:658][637]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.42:755][643]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.42:852][649]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.42:964][656]LogBlueprintUserMessages: [spiritOrbOG_188] 685.0
+[2017.02.09-11.41.43:061][662]LogBlueprintUserMessages: [spiritOrbOG_188] 681.205383
+[2017.02.09-11.41.43:158][668]LogBlueprintUserMessages: [spiritOrbOG_188] 666.205383
+[2017.02.09-11.41.43:254][674]LogBlueprintUserMessages: [spiritOrbOG_188] 651.205383
+[2017.02.09-11.41.43:351][680]LogBlueprintUserMessages: [spiritOrbOG_188] 636.205383
+[2017.02.09-11.41.43:464][687]LogBlueprintUserMessages: [spiritOrbOG_188] 621.205383
+[2017.02.09-11.41.43:545][692]LogBlueprintUserMessages: [corruptionCube6] 621.205383
+[2017.02.09-11.41.43:561][693]LogBlueprintUserMessages: [spiritOrbOG_188] -621.205383
+[2017.02.09-11.41.43:561][693]LogBlueprintUserMessages: [spiritOrbOG_188] -606.205383
+[2017.02.09-11.41.43:658][699]LogBlueprintUserMessages: [spiritOrbOG_188] -591.205383
+[2017.02.09-11.41.43:755][705]LogBlueprintUserMessages: [spiritOrbOG_188] -576.205383
+[2017.02.09-11.41.43:851][711]LogBlueprintUserMessages: [spiritOrbOG_188] -561.205383
+[2017.02.09-11.41.43:964][718]LogBlueprintUserMessages: [spiritOrbOG_188] -546.205383
+[2017.02.09-11.41.44:061][724]LogBlueprintUserMessages: [spiritOrbOG_188] -531.205383
+[2017.02.09-11.41.44:158][730]LogBlueprintUserMessages: [spiritOrbOG_188] -516.205383
+[2017.02.09-11.41.44:255][736]LogBlueprintUserMessages: [spiritOrbOG_188] -501.205383
+[2017.02.09-11.41.44:351][742]LogBlueprintUserMessages: [spiritOrbOG_188] -486.205383
+[2017.02.09-11.41.44:464][749]LogBlueprintUserMessages: [spiritOrbOG_188] -471.205383
+[2017.02.09-11.41.44:561][755]LogBlueprintUserMessages: [spiritOrbOG_188] 685.0
+[2017.02.09-11.41.44:658][761]LogBlueprintUserMessages: [spiritOrbOG_188] 670.0
+[2017.02.09-11.41.44:754][767]LogBlueprintUserMessages: [spiritOrbOG_188] 655.0
+[2017.02.09-11.41.44:851][773]LogBlueprintUserMessages: [spiritOrbOG_188] 640.0
+[2017.02.09-11.41.44:964][780]LogBlueprintUserMessages: [spiritOrbOG_188] 625.0
+[2017.02.09-11.41.45:061][786]LogBlueprintUserMessages: [spiritOrbOG_188] 610.0
+[2017.02.09-11.41.45:158][792]LogBlueprintUserMessages: [spiritOrbOG_188] 595.0
+[2017.02.09-11.41.45:254][798]LogBlueprintUserMessages: [spiritOrbOG_188] 580.0
+[2017.02.09-11.41.45:351][804]LogBlueprintUserMessages: [spiritOrbOG_188] 565.0
+[2017.02.09-11.41.45:464][811]LogBlueprintUserMessages: [spiritOrbOG_188] 550.0
+[2017.02.09-11.41.45:496][813]LogBlueprintUserMessages: [corruptionCube18] 550.0
+[2017.02.09-11.41.45:513][814]LogBlueprintUserMessages: [spiritOrbOG_188] -550.0
+[2017.02.09-11.41.45:561][817]LogBlueprintUserMessages: [spiritOrbOG_188] -535.0
+[2017.02.09-11.41.45:658][823]LogBlueprintUserMessages: [spiritOrbOG_188] -520.0
+[2017.02.09-11.41.45:754][829]LogBlueprintUserMessages: [spiritOrbOG_188] -505.0
+[2017.02.09-11.41.45:851][835]LogBlueprintUserMessages: [spiritOrbOG_188] -490.0
+[2017.02.09-11.41.45:964][842]LogBlueprintUserMessages: [spiritOrbOG_188] -475.0
+[2017.02.09-11.41.46:061][848]LogBlueprintUserMessages: [spiritOrbOG_188] -460.0
+[2017.02.09-11.41.46:158][854]LogBlueprintUserMessages: [spiritOrbOG_188] -445.0
+[2017.02.09-11.41.46:255][860]LogBlueprintUserMessages: [spiritOrbOG_188] -430.0
+[2017.02.09-11.41.46:352][866]LogBlueprintUserMessages: [spiritOrbOG_188] -415.0
+[2017.02.09-11.41.46:465][873]LogBlueprintUserMessages: [spiritOrbOG_188] -400.0
+[2017.02.09-11.41.46:562][879]LogBlueprintUserMessages: [spiritOrbOG_188] -385.0
+[2017.02.09-11.41.46:658][885]LogBlueprintUserMessages: [spiritOrbOG_188] -370.0
+[2017.02.09-11.41.46:755][891]LogBlueprintUserMessages: [spiritOrbOG_188] -355.0
+[2017.02.09-11.41.46:852][897]LogBlueprintUserMessages: [spiritOrbOG_188] -340.0
+[2017.02.09-11.41.46:965][904]LogBlueprintUserMessages: [spiritOrbOG_188] 685.0
+[2017.02.09-11.41.47:062][910]LogBlueprintUserMessages: [spiritOrbOG_188] 670.0
+[2017.02.09-11.41.47:158][916]LogBlueprintUserMessages: [spiritOrbOG_188] 655.0
+[2017.02.09-11.41.47:255][922]LogBlueprintUserMessages: [spiritOrbOG_188] 640.0
+[2017.02.09-11.41.47:352][928]LogBlueprintUserMessages: [spiritOrbOG_188] 625.0
+[2017.02.09-11.41.47:465][935]LogBlueprintUserMessages: [spiritOrbOG_188] 610.0
+[2017.02.09-11.41.47:561][941]LogBlueprintUserMessages: [spiritOrbOG_188] 595.0
+[2017.02.09-11.41.47:659][947]LogBlueprintUserMessages: [spiritOrbOG_188] 580.0
+[2017.02.09-11.41.47:755][953]LogBlueprintUserMessages: [spiritOrbOG_188] 565.0
+[2017.02.09-11.41.47:852][959]LogBlueprintUserMessages: [spiritOrbOG_188] 550.0
+[2017.02.09-11.41.47:965][966]LogBlueprintUserMessages: [spiritOrbOG_188] 535.0
+[2017.02.09-11.41.48:062][972]LogBlueprintUserMessages: [spiritOrbOG_188] 520.0
+[2017.02.09-11.41.48:158][978]LogBlueprintUserMessages: [spiritOrbOG_188] 505.0
+[2017.02.09-11.41.48:255][984]LogBlueprintUserMessages: [spiritOrbOG_188] 490.0
+[2017.02.09-11.41.48:353][990]LogBlueprintUserMessages: [spiritOrbOG_188] 475.0
+[2017.02.09-11.41.48:385][992]LogBlueprintUserMessages: [corruptionCube48] 475.0
+[2017.02.09-11.41.48:401][993]LogBlueprintUserMessages: [spiritOrbOG_188] -475.0
+[2017.02.09-11.41.48:465][997]LogBlueprintUserMessages: [spiritOrbOG_188] -460.0
+[2017.02.09-11.41.48:561][  3]LogBlueprintUserMessages: [spiritOrbOG_188] -445.0
+[2017.02.09-11.41.48:658][  9]LogBlueprintUserMessages: [spiritOrbOG_188] -430.0
+[2017.02.09-11.41.48:755][ 15]LogBlueprintUserMessages: [spiritOrbOG_188] -415.0
+[2017.02.09-11.41.48:805][ 18]LogBlueprintUserMessages: [corruptionCube16] -411.512299
+[2017.02.09-11.41.48:805][ 18]LogBlueprintUserMessages: [spiritOrbOG_188] -411.512299
+[2017.02.09-11.41.48:852][ 21]LogBlueprintUserMessages: [spiritOrbOG_188] -396.512299
+[2017.02.09-11.41.48:965][ 28]LogBlueprintUserMessages: [spiritOrbOG_188] -381.512299
+[2017.02.09-11.41.49:013][ 31]LogBlueprintUserMessages: [corruptionCube4] -381.512299
+[2017.02.09-11.41.49:029][ 32]LogBlueprintUserMessages: [spiritOrbOG_188] -381.512268
+[2017.02.09-11.41.49:062][ 34]LogBlueprintUserMessages: [spiritOrbOG_188] -366.512268
+[2017.02.09-11.41.49:158][ 40]LogBlueprintUserMessages: [spiritOrbOG_188] -351.512268
+[2017.02.09-11.41.49:255][ 46]LogBlueprintUserMessages: [spiritOrbOG_188] -336.512268
+[2017.02.09-11.41.49:352][ 52]LogBlueprintUserMessages: [spiritOrbOG_188] -321.512268
+[2017.02.09-11.41.49:465][ 59]LogBlueprintUserMessages: [spiritOrbOG_188] -306.512268
+[2017.02.09-11.41.49:561][ 65]LogBlueprintUserMessages: [spiritOrbOG_188] -291.512268
+[2017.02.09-11.41.49:658][ 71]LogBlueprintUserMessages: [spiritOrbOG_188] -276.512268
+[2017.02.09-11.41.49:755][ 77]LogBlueprintUserMessages: [spiritOrbOG_188] -261.512268
+[2017.02.09-11.41.49:852][ 83]LogBlueprintUserMessages: [spiritOrbOG_188] -246.512268
+[2017.02.09-11.41.49:965][ 90]LogBlueprintUserMessages: [spiritOrbOG_188] -231.512268
+[2017.02.09-11.41.50:062][ 96]LogBlueprintUserMessages: [spiritOrbOG_188] -216.512268
+[2017.02.09-11.41.50:158][102]LogBlueprintUserMessages: [spiritOrbOG_188] -201.512268
+[2017.02.09-11.41.50:255][108]LogBlueprintUserMessages: [spiritOrbOG_188] -186.512268
+[2017.02.09-11.41.50:352][114]LogBlueprintUserMessages: [spiritOrbOG_188] -171.512268
+[2017.02.09-11.41.50:465][121]LogBlueprintUserMessages: [spiritOrbOG_188] -156.512268
+[2017.02.09-11.41.50:562][127]LogBlueprintUserMessages: [spiritOrbOG_188] -141.512268
+[2017.02.09-11.41.50:659][133]LogBlueprintUserMessages: [spiritOrbOG_188] -126.512268
+[2017.02.09-11.41.50:755][139]LogBlueprintUserMessages: [spiritOrbOG_188] -111.512268
+[2017.02.09-11.41.50:852][145]LogBlueprintUserMessages: [spiritOrbOG_188] -96.512268
+[2017.02.09-11.41.50:965][152]LogBlueprintUserMessages: [spiritOrbOG_188] -81.512268
+[2017.02.09-11.41.51:062][158]LogBlueprintUserMessages: [spiritOrbOG_188] -66.512268
+[2017.02.09-11.41.51:159][164]LogBlueprintUserMessages: [spiritOrbOG_188] -51.512268
+[2017.02.09-11.41.51:255][170]LogBlueprintUserMessages: [spiritOrbOG_188] -36.512268
+[2017.02.09-11.41.51:352][176]LogBlueprintUserMessages: [spiritOrbOG_188] -21.512268
+[2017.02.09-11.41.51:465][183]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.51:562][189]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.51:659][195]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.51:755][201]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.51:852][207]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.51:965][214]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.52:062][220]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.52:159][226]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.52:257][232]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.52:354][238]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.52:451][244]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.52:564][251]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.52:661][257]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.52:757][263]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.52:854][269]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.52:951][275]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.53:064][282]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.53:161][288]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.53:258][294]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.53:354][300]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.53:451][306]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.53:564][313]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.53:660][319]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.53:757][325]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.53:854][331]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.53:951][337]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.54:064][344]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.54:161][350]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.54:257][356]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.54:354][362]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.54:451][368]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.54:564][375]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.54:661][381]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.54:758][387]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.54:854][393]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.54:951][399]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.55:064][406]LogBlueprintUserMessages: [spiritOrbOG_188] 684.301331
+[2017.02.09-11.41.55:161][412]LogBlueprintUserMessages: [spiritOrbOG_188] 669.301331
+[2017.02.09-11.41.55:258][418]LogBlueprintUserMessages: [spiritOrbOG_188] 654.301331
+[2017.02.09-11.41.55:354][424]LogBlueprintUserMessages: [spiritOrbOG_188] 639.301331
+[2017.02.09-11.41.55:451][430]LogBlueprintUserMessages: [spiritOrbOG_188] 624.301331
+[2017.02.09-11.41.55:564][437]LogBlueprintUserMessages: [spiritOrbOG_188] 609.301331
+[2017.02.09-11.41.55:661][443]LogBlueprintUserMessages: [spiritOrbOG_188] 594.301331
+[2017.02.09-11.41.55:758][449]LogBlueprintUserMessages: [spiritOrbOG_188] 579.301331
+[2017.02.09-11.41.55:854][455]LogBlueprintUserMessages: [spiritOrbOG_188] 564.301331
+[2017.02.09-11.41.55:951][461]LogBlueprintUserMessages: [spiritOrbOG_188] 549.301331
+[2017.02.09-11.41.56:064][468]LogBlueprintUserMessages: [spiritOrbOG_188] 534.301331
+[2017.02.09-11.41.56:161][474]LogBlueprintUserMessages: [spiritOrbOG_188] 519.301331
+[2017.02.09-11.41.56:258][480]LogBlueprintUserMessages: [spiritOrbOG_188] 504.301331
+[2017.02.09-11.41.56:354][486]LogBlueprintUserMessages: [spiritOrbOG_188] 489.301331
+[2017.02.09-11.41.56:403][489]LogBlueprintUserMessages: [corruptionCube50] 489.301331
+[2017.02.09-11.41.56:419][490]LogBlueprintUserMessages: [spiritOrbOG_188] -489.301331
+[2017.02.09-11.41.56:451][492]LogBlueprintUserMessages: [spiritOrbOG_188] -474.301331
+[2017.02.09-11.41.56:564][499]LogBlueprintUserMessages: [spiritOrbOG_188] -459.301331
+[2017.02.09-11.41.56:661][505]LogBlueprintUserMessages: [spiritOrbOG_188] -444.301331
+[2017.02.09-11.41.56:758][511]LogBlueprintUserMessages: [spiritOrbOG_188] -429.301331
+[2017.02.09-11.41.56:854][517]LogBlueprintUserMessages: [spiritOrbOG_188] -414.301331
+[2017.02.09-11.41.56:951][523]LogBlueprintUserMessages: [spiritOrbOG_188] -399.301331
+[2017.02.09-11.41.57:064][530]LogBlueprintUserMessages: [spiritOrbOG_188] -384.301331
+[2017.02.09-11.41.57:161][536]LogBlueprintUserMessages: [spiritOrbOG_188] -369.301331
+[2017.02.09-11.41.57:258][542]LogBlueprintUserMessages: [spiritOrbOG_188] -354.301331
+[2017.02.09-11.41.57:354][548]LogBlueprintUserMessages: [spiritOrbOG_188] -339.301331
+[2017.02.09-11.41.57:451][554]LogBlueprintUserMessages: [spiritOrbOG_188] -324.301331
+[2017.02.09-11.41.57:564][561]LogBlueprintUserMessages: [spiritOrbOG_188] -309.301331
+[2017.02.09-11.41.57:660][567]LogBlueprintUserMessages: [spiritOrbOG_188] -294.301331
+[2017.02.09-11.41.57:758][573]LogBlueprintUserMessages: [spiritOrbOG_188] -279.301331
+[2017.02.09-11.41.57:854][579]LogBlueprintUserMessages: [spiritOrbOG_188] -264.301331
+[2017.02.09-11.41.57:951][585]LogBlueprintUserMessages: [spiritOrbOG_188] -249.301331
+[2017.02.09-11.41.58:064][592]LogBlueprintUserMessages: [spiritOrbOG_188] -234.301331
+[2017.02.09-11.41.58:161][598]LogBlueprintUserMessages: [spiritOrbOG_188] -219.301331
+[2017.02.09-11.41.58:258][604]LogBlueprintUserMessages: [spiritOrbOG_188] -204.301331
+[2017.02.09-11.41.58:355][610]LogBlueprintUserMessages: [spiritOrbOG_188] -189.301331
+[2017.02.09-11.41.58:451][616]LogBlueprintUserMessages: [spiritOrbOG_188] -174.301331
+[2017.02.09-11.41.58:565][623]LogBlueprintUserMessages: [spiritOrbOG_188] -159.301331
+[2017.02.09-11.41.58:661][629]LogBlueprintUserMessages: [spiritOrbOG_188] -144.301331
+[2017.02.09-11.41.58:758][635]LogBlueprintUserMessages: [spiritOrbOG_188] -129.301331
+[2017.02.09-11.41.58:854][641]LogBlueprintUserMessages: [spiritOrbOG_188] -114.301331
+[2017.02.09-11.41.58:951][647]LogBlueprintUserMessages: [spiritOrbOG_188] -99.301331
+[2017.02.09-11.41.59:064][654]LogBlueprintUserMessages: [spiritOrbOG_188] -84.301331
+[2017.02.09-11.41.59:161][660]LogBlueprintUserMessages: [spiritOrbOG_188] -69.301331
+[2017.02.09-11.41.59:258][666]LogBlueprintUserMessages: [spiritOrbOG_188] -54.301331
+[2017.02.09-11.41.59:355][672]LogBlueprintUserMessages: [spiritOrbOG_188] -39.301331
+[2017.02.09-11.41.59:452][678]LogBlueprintUserMessages: [spiritOrbOG_188] -24.301331
+[2017.02.09-11.41.59:564][685]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.59:661][691]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.59:758][697]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.59:854][703]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.41.59:952][709]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.00:064][716]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.00:161][722]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.00:258][728]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.00:355][734]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.00:452][740]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.00:564][747]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.00:661][753]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.00:758][759]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.00:855][765]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.00:952][771]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.01:064][778]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.01:162][784]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.01:258][790]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.01:356][796]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.01:452][802]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.01:566][809]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.01:663][815]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.01:760][821]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.01:856][827]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.01:953][833]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.02:066][840]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.02:162][846]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.02:259][852]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.02:356][858]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.02:453][864]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.02:566][871]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.02:662][877]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.02:759][883]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.02:855][889]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.02:953][895]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.03:065][902]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.03:162][908]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.03:259][914]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.03:356][920]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.03:453][926]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.03:565][933]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.03:663][939]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.03:759][945]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.03:856][951]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.03:952][957]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.04:066][964]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.04:163][970]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.04:260][976]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.04:357][982]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.04:453][988]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.04:566][995]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.04:663][  1]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.04:760][  7]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.04:856][ 13]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.04:953][ 19]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.05:066][ 26]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.05:163][ 32]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.05:260][ 38]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.05:356][ 44]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.05:454][ 50]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.05:566][ 57]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.05:663][ 63]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.05:760][ 69]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.05:856][ 75]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.05:953][ 81]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.06:066][ 88]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.06:163][ 94]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.06:260][100]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.06:356][106]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.06:453][112]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.06:566][119]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.06:663][125]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.06:759][131]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.06:856][137]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.06:953][143]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.07:066][150]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.07:163][156]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.07:259][162]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.07:357][168]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.07:453][174]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.07:566][181]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.07:663][187]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.07:759][193]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.07:856][199]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.07:953][205]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.08:066][212]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.08:163][218]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.08:260][224]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.08:356][230]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.08:453][236]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.08:566][243]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.08:663][249]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.08:760][255]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.08:857][261]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.08:953][267]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.09:066][274]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.09:163][280]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.09:260][286]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.09:357][292]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.09:453][298]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.09:566][305]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.09:663][311]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.09:760][317]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.09:856][323]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.09:953][329]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.10:066][336]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.10:163][342]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.10:260][348]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.10:357][354]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.10:453][360]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.10:566][367]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.10:664][373]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.10:760][379]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.10:856][385]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.10:954][391]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.11:067][398]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.11:163][404]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.11:260][410]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.11:356][416]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.11:454][422]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.11:567][429]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.11:663][435]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.11:760][441]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.11:857][447]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.11:953][453]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.12:066][460]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.12:163][466]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.12:260][472]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.12:357][478]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.12:454][484]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.12:567][491]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.12:663][497]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.12:760][503]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.12:857][509]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.12:954][515]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.13:067][522]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.13:164][528]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.13:260][534]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.13:357][540]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.13:453][546]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.13:553][552]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.13:664][559]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.13:761][565]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.13:857][571]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.13:954][577]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.14:051][583]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.14:164][590]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.14:261][596]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.14:357][602]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.14:455][608]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.14:551][614]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.14:664][621]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.14:761][627]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.14:858][633]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.14:955][639]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.15:051][645]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.15:164][652]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.15:261][658]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.15:359][664]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.15:454][670]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.15:551][676]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.15:664][683]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.15:761][689]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.15:857][695]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.15:955][701]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.16:051][707]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.16:164][714]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.16:261][720]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.16:357][726]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.16:454][732]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.16:551][738]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.16:664][745]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.16:761][751]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.16:858][757]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.16:954][763]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.17:051][769]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.17:164][776]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.17:261][782]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.17:358][788]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.17:454][794]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.17:552][800]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.17:664][807]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.17:761][813]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.17:858][819]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.17:954][825]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.18:051][831]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.18:164][838]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.18:261][844]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.18:358][850]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.18:455][856]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.18:552][862]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.18:664][869]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.18:761][875]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.18:858][881]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.18:954][887]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.19:051][893]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.19:164][900]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.19:261][906]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.19:358][912]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.19:455][918]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.19:552][924]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.19:665][931]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.19:761][937]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.19:858][943]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.19:955][949]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.20:052][955]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.20:165][962]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.20:262][968]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.20:359][974]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.20:455][980]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.20:552][986]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.20:665][993]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.20:762][999]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.20:858][  5]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.20:955][ 11]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.21:052][ 17]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.21:165][ 24]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.21:262][ 30]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.21:358][ 36]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.21:455][ 42]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.21:552][ 48]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.21:665][ 55]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.21:762][ 61]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.21:858][ 67]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.21:955][ 73]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.22:052][ 79]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.22:165][ 86]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.22:262][ 92]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.22:358][ 98]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.22:457][104]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.22:553][110]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.22:665][117]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.22:763][123]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.22:859][129]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.22:956][135]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.23:053][141]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.23:165][148]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.23:262][154]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.23:359][160]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.23:456][166]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.23:553][172]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.23:666][179]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.23:763][185]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.23:859][191]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.23:957][197]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.24:053][203]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.24:166][210]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.24:263][216]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.24:359][222]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.24:456][228]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.24:553][234]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.24:666][241]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.24:762][247]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.24:859][253]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.24:956][259]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.25:053][265]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.25:166][272]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.25:263][278]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.25:359][284]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.25:456][290]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.25:553][296]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.25:666][303]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.25:763][309]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.25:860][315]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.25:956][321]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.26:054][327]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.26:166][334]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.26:263][340]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.26:359][346]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.26:456][352]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.26:553][358]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.26:666][365]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.26:763][371]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.26:860][377]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.26:956][383]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.27:053][389]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.27:166][396]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.27:263][402]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.27:359][408]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.27:456][414]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.27:553][420]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.27:666][427]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.27:763][433]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.27:859][439]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.27:957][445]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.28:053][451]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.28:166][458]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.28:262][464]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.28:360][470]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.28:456][476]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.28:554][482]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.28:666][489]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.28:763][495]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.28:859][501]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.28:956][507]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.29:053][513]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.29:166][520]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.29:263][526]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.29:359][532]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.29:456][538]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.29:553][544]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.29:666][551]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.29:766][557]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.29:859][563]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.29:956][569]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.30:053][575]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.30:166][582]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.30:263][588]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.30:360][594]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.30:456][600]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.30:553][606]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.30:666][613]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.30:763][619]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.30:859][625]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.30:956][631]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.31:053][637]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.31:166][644]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.31:263][650]LogBlueprintUserMessages: [spiritOrbOG_188] 0.0
+[2017.02.09-11.42.31:335][653]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.02.09-11.42.31:340][653]LogEngine: All Windows Closed
+[2017.02.09-11.42.31:340][653]LogWindows: FPlatformMisc::RequestExit(0)
+[2017.02.09-11.42.31:341][654]LogMoviePlayer: Shutting down movie player
+[2017.02.09-11.42.32:224][654]LogExit: Preparing to exit.
+[2017.02.09-11.42.32:790][654]LogExit: Game engine shut down
+[2017.02.09-11.42.32:910][654]LogObj: Freed 0b from 0 cluster array pools.
+[2017.02.09-11.42.32:910][654]LogExit: Object subsystem successfully closed.
+[2017.02.09-11.42.32:925][654]LogD3D11RHI: Shutdown
+[2017.02.09-11.42.32:925][654]LogD3D11RHI: CleanupD3DDevice
+[2017.02.09-11.42.33:022][654]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.02.09-11.42.33:028][654]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (113)
+[2017.02.09-11.42.33:028][654]LogModuleManager: Shutting down and abandoning module SequenceRecorder (112)
+[2017.02.09-11.42.33:028][654]LogModuleManager: Shutting down and abandoning module AutomationController (111)
+[2017.02.09-11.42.33:028][654]LogModuleManager: Shutting down and abandoning module AutomationWorker (110)
+[2017.02.09-11.42.33:028][654]LogModuleManager: Shutting down and abandoning module CharacterAI (109)
+[2017.02.09-11.42.33:028][654]LogModuleManager: Shutting down and abandoning module SessionServices (108)
+[2017.02.09-11.42.33:028][654]LogModuleManager: Shutting down and abandoning module GameplayDebugger (107)
+[2017.02.09-11.42.33:028][654]LogModuleManager: Shutting down and abandoning module AITestSuite (106)
+[2017.02.09-11.42.33:028][654]LogModuleManager: Shutting down and abandoning module AIModule (105)
+[2017.02.09-11.42.33:028][654]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (104)
+[2017.02.09-11.42.33:028][654]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (103)
+[2017.02.09-11.42.33:028][654]LogModuleManager: Shutting down and abandoning module PortalServices (102)
+[2017.02.09-11.42.33:028][654]LogModuleManager: Shutting down and abandoning module PortalRpc (101)
+[2017.02.09-11.42.33:028][654]LogModuleManager: Shutting down and abandoning module MessagingRpc (100)
+[2017.02.09-11.42.33:028][654]LogModuleManager: Shutting down and abandoning module ProfilerService (99)
+[2017.02.09-11.42.33:049][654]LogModuleManager: Shutting down and abandoning module TaskGraph (98)
+[2017.02.09-11.42.33:049][654]LogModuleManager: Shutting down and abandoning module SlateRemote (97)
+[2017.02.09-11.42.33:050][654]LogModuleManager: Shutting down and abandoning module SteamVRController (96)
+[2017.02.09-11.42.33:050][654]LogModuleManager: Shutting down and abandoning module SteamVR (95)
+[2017.02.09-11.42.33:050][654]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (94)
+[2017.02.09-11.42.33:050][654]LogModuleManager: Shutting down and abandoning module OculusLibrary (93)
+[2017.02.09-11.42.33:050][654]LogModuleManager: Shutting down and abandoning module OculusInput (92)
+[2017.02.09-11.42.33:050][654]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (91)
+[2017.02.09-11.42.33:050][654]LogModuleManager: Shutting down and abandoning module CableComponent (90)
+[2017.02.09-11.42.33:050][654]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (89)
+[2017.02.09-11.42.33:050][654]LogModuleManager: Shutting down and abandoning module HTML5Networking (88)
+[2017.02.09-11.42.33:050][654]LogModuleManager: Shutting down and abandoning module DesktopPlatform (87)
+[2017.02.09-11.42.33:050][654]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (86)
+[2017.02.09-11.42.33:050][654]LogModuleManager: Shutting down and abandoning module HotReload (85)
+[2017.02.09-11.42.33:050][654]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (84)
+[2017.02.09-11.42.33:050][654]LogModuleManager: Shutting down and abandoning module UObjectPlugin (83)
+[2017.02.09-11.42.33:050][654]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (82)
+[2017.02.09-11.42.33:050][654]LogModuleManager: Shutting down and abandoning module SourceControl (81)
+[2017.02.09-11.42.33:050][654]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (80)
+[2017.02.09-11.42.33:050][654]LogModuleManager: Shutting down and abandoning module UdpMessaging (79)
+[2017.02.09-11.42.33:150][654]LogModuleManager: Shutting down and abandoning module SubstanceCore (78)
+[2017.02.09-11.42.33:150][654]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (77)
+[2017.02.09-11.42.33:150][654]LogModuleManager: Shutting down and abandoning module Paper2D (76)
+[2017.02.09-11.42.33:150][654]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (75)
+[2017.02.09-11.42.33:150][654]LogModuleManager: Shutting down and abandoning module Media (74)
+[2017.02.09-11.42.33:150][654]LogModuleManager: Shutting down and abandoning module WmfMedia (73)
+[2017.02.09-11.42.33:153][654]LogModuleManager: Shutting down and abandoning module MediaAssets (72)
+[2017.02.09-11.42.33:153][654]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (71)
+[2017.02.09-11.42.33:154][654]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (70)
+[2017.02.09-11.42.33:154][654]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (69)
+[2017.02.09-11.42.33:154][654]LogModuleManager: Shutting down and abandoning module VREditor (68)
+[2017.02.09-11.42.33:154][654]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (67)
+[2017.02.09-11.42.33:154][654]LogModuleManager: Shutting down and abandoning module PropertyEditor (66)
+[2017.02.09-11.42.33:154][654]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (65)
+[2017.02.09-11.42.33:154][654]LogModuleManager: Shutting down and abandoning module FunctionalTesting (64)
+[2017.02.09-11.42.33:154][654]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (63)
+[2017.02.09-11.42.33:154][654]LogModuleManager: Shutting down and abandoning module Sequencer (62)
+[2017.02.09-11.42.33:154][654]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (61)
+[2017.02.09-11.42.33:154][654]LogModuleManager: Shutting down and abandoning module MessageLog (60)
+[2017.02.09-11.42.33:154][654]LogModuleManager: Shutting down and abandoning module AssetTools (59)
+[2017.02.09-11.42.33:154][654]LogModuleManager: Shutting down and abandoning module UMGEditor (58)
+[2017.02.09-11.42.33:154][654]LogModuleManager: Shutting down and abandoning module UMG (57)
+[2017.02.09-11.42.33:154][654]LogModuleManager: Shutting down and abandoning module SlateReflector (56)
+[2017.02.09-11.42.33:154][654]LogModuleManager: Shutting down and abandoning module Slate (55)
+[2017.02.09-11.42.33:154][654]LogModuleManager: Shutting down and abandoning module EditorStyle (54)
+[2017.02.09-11.42.33:156][654]LogModuleManager: Shutting down and abandoning module Messaging (53)
+[2017.02.09-11.42.33:156][654]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (52)
+[2017.02.09-11.42.33:156][654]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (51)
+[2017.02.09-11.42.33:156][654]LogModuleManager: Shutting down and abandoning module XAudio2 (50)
+[2017.02.09-11.42.33:156][654]LogModuleManager: Shutting down and abandoning module Networking (48)
+[2017.02.09-11.42.33:156][654]LogModuleManager: Shutting down and abandoning module Core (47)
+[2017.02.09-11.42.33:156][654]LogModuleManager: Shutting down and abandoning module KismetCompiler (46)
+[2017.02.09-11.42.33:156][654]LogModuleManager: Shutting down and abandoning module PhysXFormats (45)
+[2017.02.09-11.42.33:156][654]LogModuleManager: Shutting down and abandoning module MeshUtilities (44)
+[2017.02.09-11.42.33:156][654]LogModuleManager: Shutting down and abandoning module AssetRegistry (43)
+[2017.02.09-11.42.33:156][654]LogModuleManager: Shutting down and abandoning module DerivedDataCache (42)
+[2017.02.09-11.42.33:247][654]LogDerivedDataCache: Shutdown
+[2017.02.09-11.42.33:247][654]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (41)
+[2017.02.09-11.42.33:247][654]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (40)
+[2017.02.09-11.42.33:247][654]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (39)
+[2017.02.09-11.42.33:247][654]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (38)
+[2017.02.09-11.42.33:247][654]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (37)
+[2017.02.09-11.42.33:247][654]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (36)
+[2017.02.09-11.42.33:247][654]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (35)
+[2017.02.09-11.42.33:247][654]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (34)
+[2017.02.09-11.42.33:247][654]LogModuleManager: Shutting down and abandoning module ImageWrapper (33)
+[2017.02.09-11.42.33:247][654]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (32)
+[2017.02.09-11.42.33:247][654]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (31)
+[2017.02.09-11.42.33:247][654]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (30)
+[2017.02.09-11.42.33:247][654]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (29)
+[2017.02.09-11.42.33:247][654]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (28)
+[2017.02.09-11.42.33:247][654]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (27)
+[2017.02.09-11.42.33:247][654]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (26)
+[2017.02.09-11.42.33:247][654]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (25)
+[2017.02.09-11.42.33:247][654]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (24)
+[2017.02.09-11.42.33:247][654]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2017.02.09-11.42.33:247][654]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2017.02.09-11.42.33:247][654]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2017.02.09-11.42.33:247][654]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2017.02.09-11.42.33:247][654]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2017.02.09-11.42.33:247][654]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2017.02.09-11.42.33:247][654]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2017.02.09-11.42.33:247][654]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2017.02.09-11.42.33:247][654]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2017.02.09-11.42.33:247][654]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2017.02.09-11.42.33:247][654]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2017.02.09-11.42.33:247][654]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2017.02.09-11.42.33:248][654]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2017.02.09-11.42.33:248][654]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2017.02.09-11.42.33:248][654]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2017.02.09-11.42.33:248][654]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2017.02.09-11.42.33:248][654]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2017.02.09-11.42.33:248][654]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2017.02.09-11.42.33:248][654]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2017.02.09-11.42.33:248][654]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2017.02.09-11.42.33:248][654]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2017.02.09-11.42.33:248][654]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2017.02.09-11.42.33:249][654]LogExit: Exiting.
+[2017.02.09-11.42.33:251][654]Log file closed, 02/09/17 06:42:33
